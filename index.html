@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Rashid — AI & Full-Stack Developer</title>
+    <meta name="description" content="Ali Rashid — BS Computer Science student at UET Taxila. AI & full-stack developer building React, Three.js, and Gemini-powered projects." />
+    <meta name="theme-color" content="#050816" />
+
+    <meta property="og:title" content="Ali Rashid — AI & Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Ali Rashid — Computer Science student, AI & full-stack developer." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script>
+      // GitHub Pages SPA fallback — decodes the redirect from 404.html (if present)
+      // back into a real path before React Router mounts. No-op on Vercel/Netlify.
+      (function (l) {
+        var params = new URLSearchParams(l.search)
+        var p = params.get('p')
+        if (p) {
+          var q = params.get('q')
+          p = p.replace(/~and~/g, '&')
+          q = q ? q.replace(/~and~/g, '&') : ''
+          window.history.replaceState(null, '', l.pathname.slice(0, -1) + p + (q ? '?' + q : '') + l.hash)
+        }
+      })(window.location)
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

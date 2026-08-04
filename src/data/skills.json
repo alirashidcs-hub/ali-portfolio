@@ -1,0 +1,35 @@
+[
+  { "category": "Programming Languages", "items": [
+    { "name": "Java", "level": 85 },
+    { "name": "Python", "level": 88 },
+    { "name": "C++", "level": 80 },
+    { "name": "JavaScript", "level": 90 },
+    { "name": "TypeScript", "level": 82 },
+    { "name": "HTML", "level": 95 },
+    { "name": "CSS", "level": 90 }
+  ]},
+  { "category": "Frameworks", "items": [
+    { "name": "React", "level": 90 },
+    { "name": "Vite", "level": 85 },
+    { "name": "Express.js", "level": 78 },
+    { "name": "Tailwind CSS", "level": 88 },
+    { "name": "Framer Motion", "level": 78 },
+    { "name": "Three.js", "level": 76 }
+  ]},
+  { "category": "AI & Tools", "items": [
+    { "name": "Google Gemini API", "level": 82 },
+    { "name": "Google Drive API", "level": 70 },
+    { "name": "Git", "level": 88 },
+    { "name": "GitHub", "level": 88 },
+    { "name": "Arduino UNO", "level": 65 },
+    { "name": "Microsoft Office", "level": 90 }
+  ]},
+  { "category": "Currently Learning", "items": [
+    { "name": "Artificial Intelligence", "level": 55 },
+    { "name": "Machine Learning", "level": 50 },
+    { "name": "Data Structures", "level": 65 },
+    { "name": "Algorithms", "level": 62 },
+    { "name": "Backend Development", "level": 58 },
+    { "name": "Cloud Technologies", "level": 40 }
+  ]}
+]
