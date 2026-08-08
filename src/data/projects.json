@@ -1,7 +1,33 @@
 [
   {
+    "id": "open-agent-studio",
+    "emoji": "🤖",
+    "title": "Open Agent Studio",
+    "description": "An open-source visual AI agent builder for designing, testing, configuring, and deploying AI agents.",
+    "longDescription": "Open Agent Studio is a full-stack platform for building and managing AI agents through a visual node-based workflow builder. It supports configurable AI models, real-time streaming execution, MCP tools, encrypted provider credentials, API key management, Redis-backed rate limiting, and secure agent deployment APIs.",
+    "category": "AI & Agents",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Redis",
+      "MCP",
+      "AI Agents"
+    ],
+    "featured": true,
+    "date": "2026-08-09",
+    "status": "In Progress",
+    "images": [
+      "/assets/projects/open-agent-studio.svg"
+    ],
+    "demoVideoUrl": "",
+    "liveUrl": "https://open-agent-studio.vercel.app/",
+    "githubUrl": "https://github.com/alirashidcs-hub/open-agent-studio"
+  },
+  {
     "id": "homevista-3d",
-    "emoji": "\ud83c\udfe1",
+    "emoji": "🏡",
     "title": "HomeVista 3D",
     "description": "AI-powered 3D real estate platform with an interactive master plan and immersive property visualization.",
     "longDescription": "HomeVista 3D is an AI-powered 3D real estate platform featuring an interactive master plan, immersive property visualization, intelligent plot recommendations, real-time home customization, investment estimation, and Google Gemini AI integration.",
@@ -23,7 +49,7 @@
   },
   {
     "id": "aura-atelier",
-    "emoji": "\ud83d\udc57",
+    "emoji": "👗",
     "title": "Aura Atelier",
     "description": "AI-powered 3D virtual fitting room and haute couture styling platform.",
     "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform featuring an interactive Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive luxury styling experiences.",
@@ -45,7 +71,7 @@
   },
   {
     "id": "nutriai-pakistan",
-    "emoji": "\ud83e\udd57",
+    "emoji": "🥗",
     "title": "NutriAI Pakistan",
     "description": "AI-powered nutrition and health management platform built around local Pakistani cuisine.",
     "longDescription": "NutriAI Pakistan is an AI-powered nutrition and health management platform featuring personalized Pakistani meal plans, BMI & calorie calculators, nutrition analytics, grocery management, healthy recipes, AI nutrition assistance, and an integrated admin dashboard.",
@@ -67,7 +93,7 @@
   },
   {
     "id": "interviewai",
-    "emoji": "\ud83c\udfa4",
+    "emoji": "🎤",
     "title": "InterviewAI",
     "description": "An AI-powered career readiness and interview coaching platform.",
     "longDescription": "InterviewAI is an AI-powered career readiness and interview coaching platform designed to help students and professionals prepare for technical and behavioral interviews through intelligent mock interviews, resume optimization, and personalized performance analytics.",
@@ -89,7 +115,7 @@
   },
   {
     "id": "fitnova-ai",
-    "emoji": "\ud83d\udcaa",
+    "emoji": "💪",
     "title": "FitNova AI",
     "description": "AI-powered fitness and wellness platform with an intelligent coach and health analytics.",
     "longDescription": "FitNova AI is an AI-powered fitness and wellness platform featuring an intelligent fitness coach, workout tracking, habit management, health analytics, and interactive dashboards.",
@@ -111,7 +137,7 @@
   },
   {
     "id": "finova-ai",
-    "emoji": "\ud83d\udcb0",
+    "emoji": "💰",
     "title": "Finova AI",
     "description": "AI-powered personal finance and wealth management platform.",
     "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern, responsive dashboard.",
@@ -133,7 +159,7 @@
   },
   {
     "id": "studyflow-ai",
-    "emoji": "\ud83d\udcda",
+    "emoji": "📚",
     "title": "StudyFlow AI",
     "description": "AI-powered study companion with note summarization, tutoring, and quiz generation.",
     "longDescription": "StudyFlow AI is an AI-powered study companion featuring smart note summarization, AI tutoring, quiz generation, and productivity tools for students.",
@@ -155,7 +181,7 @@
   },
   {
     "id": "reelflow",
-    "emoji": "\ud83c\udfa5",
+    "emoji": "🎥",
     "title": "ReelFlow",
     "description": "A modern short-video social media platform with a mobile-first experience.",
     "longDescription": "ReelFlow is a modern short-video social media platform with video sharing, authentication, user profiles, and a mobile-first user experience.",
@@ -177,7 +203,7 @@
   },
   {
     "id": "chrono-velosec",
-    "emoji": "\ud83d\udee0",
+    "emoji": "🛠️",
     "title": "Chrono VeloSec Utility Suite",
     "description": "A C++ productivity toolkit demonstrating modern C++ programming concepts.",
     "longDescription": "Chrono VeloSec Utility Suite is a C++ productivity toolkit featuring utilities for improving productivity and demonstrating modern C++ programming concepts.",
@@ -198,7 +224,7 @@
   },
   {
     "id": "arcana-console",
-    "emoji": "\ud83c\udfae",
+    "emoji": "🎮",
     "title": "Arcana Console Game Suite",
     "description": "A collection of console-based games built in C++ showcasing OOP and game logic.",
     "longDescription": "Arcana Console Game Suite is a collection of console-based games developed in C++, showcasing object-oriented programming, game logic, and problem-solving skills.",
