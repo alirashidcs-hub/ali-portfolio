@@ -15,12 +15,16 @@ export default function Hero() {
 
   useEffect(() => {
     let cancelled = false
+
     fetch(`https://api.github.com/users/${socials.githubUsername}`)
       .then((r) => (r.ok ? r.json() : null))
       .then((user) => {
-        if (!cancelled && user?.public_repos) setRepoCount(user.public_repos)
+        if (!cancelled && user?.public_repos) {
+          setRepoCount(user.public_repos)
+        }
       })
       .catch(() => {})
+
     return () => {
       cancelled = true
     }
@@ -33,8 +37,13 @@ export default function Hero() {
   ]
 
   return (
-    <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-24">
-      <div className="mx-auto flex max-w-6xl flex-col items-center px-6 text-center">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center justify-center px-6 py-24"
+    >
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
+
+        {/* Education / University */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,15 +53,21 @@ export default function Hero() {
           {profile.degree} · UET Taxila
         </motion.p>
 
+        {/* Main Name */}
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35, duration: 0.7, ease: 'easeOut' }}
+          transition={{
+            delay: 0.35,
+            duration: 0.7,
+            ease: 'easeOut',
+          }}
           className="font-display text-5xl font-semibold tracking-tight text-slate-50 sm:text-7xl md:text-8xl"
         >
-          ALI <span className="text-gradient">RASHID</span>
+          Ali <span className="text-gradient">Rashid</span>
         </motion.h1>
 
+        {/* Professional Identity */}
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,6 +77,7 @@ export default function Hero() {
           {profile.degree} — {profile.tagline}
         </motion.p>
 
+        {/* Dynamic Professional Roles */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -69,11 +85,15 @@ export default function Hero() {
           className="mt-6 flex h-7 items-center font-mono text-sm text-cyan-300 sm:text-base"
         >
           <span className="mr-2 text-slate-500">const focus =</span>
+
           <span>"{typed}</span>
+
           <span className="ml-0.5 inline-block h-4 w-[2px] animate-pulse bg-cyan-300" />
+
           <span>"</span>
         </motion.div>
 
+        {/* Main Actions */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -87,6 +107,7 @@ export default function Hero() {
           >
             View Projects
           </Link>
+
           <a
             data-cursor-hover
             href={profile.resumeUrl}
@@ -95,6 +116,7 @@ export default function Hero() {
           >
             Download Resume
           </a>
+
           <Link
             data-cursor-hover
             to="/#contact"
@@ -104,6 +126,7 @@ export default function Hero() {
           </Link>
         </motion.div>
 
+        {/* GitHub / LinkedIn Links */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -117,8 +140,10 @@ export default function Hero() {
             rel="noreferrer"
             className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-sky-300"
           >
-            <Github size={15} /> View GitHub
+            <Github size={15} />
+            View GitHub
           </a>
+
           <a
             data-cursor-hover
             href={socials.linkedin}
@@ -126,10 +151,12 @@ export default function Hero() {
             rel="noreferrer"
             className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-sky-300"
           >
-            <Linkedin size={15} /> Connect on LinkedIn
+            <Linkedin size={15} />
+            Connect on LinkedIn
           </a>
         </motion.div>
 
+        {/* Social Icons */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -137,9 +164,21 @@ export default function Hero() {
           className="mt-10 flex items-center gap-6"
         >
           {[
-            { icon: Linkedin, href: socials.linkedin, label: 'LinkedIn' },
-            { icon: Github, href: socials.github, label: 'GitHub' },
-            { icon: Mail, href: `mailto:${socials.email}`, label: 'Email' },
+            {
+              icon: Linkedin,
+              href: socials.linkedin,
+              label: 'LinkedIn',
+            },
+            {
+              icon: Github,
+              href: socials.github,
+              label: 'GitHub',
+            },
+            {
+              icon: Mail,
+              href: `mailto:${socials.email}`,
+              label: 'Email',
+            },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
@@ -155,6 +194,7 @@ export default function Hero() {
           ))}
         </motion.div>
 
+        {/* Portfolio Statistics */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -167,6 +207,7 @@ export default function Hero() {
                 <Counter to={s.value} />
                 <span>+</span>
               </p>
+
               <p className="mt-1 font-mono text-[10px] uppercase tracking-widest text-slate-500 sm:text-xs">
                 {s.label}
               </p>
@@ -175,12 +216,17 @@ export default function Hero() {
         </motion.div>
       </div>
 
+      {/* Scroll Down */}
       <motion.a
         href="#about"
         data-cursor-hover
         aria-label="Scroll down"
         animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+        transition={{
+          duration: 1.8,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 hover:text-sky-300"
       >
         <ChevronDown size={22} />
