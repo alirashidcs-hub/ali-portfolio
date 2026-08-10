@@ -39,10 +39,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center justify-center px-6 py-24"
+      aria-labelledby="hero-heading"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
-
+      <div className="mx-auto w-full max-w-5xl text-center">
         {/* Education / University */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -55,6 +55,7 @@ export default function Hero() {
 
         {/* Main Name */}
         <motion.h1
+          id="hero-heading"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -68,13 +69,26 @@ export default function Hero() {
         </motion.h1>
 
         {/* Professional Identity */}
-        <motion.p
+        <motion.h2
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-5 max-w-xl font-body text-base text-slate-400 sm:text-lg"
+          className="mt-5 max-w-2xl mx-auto font-body text-base font-medium text-slate-300 sm:text-lg"
         >
-          {profile.degree} — {profile.tagline}
+          AI &amp; Full-Stack Developer
+        </motion.h2>
+
+        {/* Professional Description */}
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.58, duration: 0.6 }}
+          className="mx-auto mt-3 max-w-2xl font-body text-sm leading-7 text-slate-400 sm:text-base"
+        >
+          Ali Rashid is a BS Computer Science student at the University of
+          Engineering and Technology (UET) Taxila, building AI-powered
+          applications, modern full-stack platforms, and interactive web
+          experiences.
         </motion.p>
 
         {/* Dynamic Professional Roles */}
@@ -82,7 +96,8 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.6 }}
-          className="mt-6 flex h-7 items-center font-mono text-sm text-cyan-300 sm:text-base"
+          className="mt-6 flex h-7 items-center justify-center font-mono text-sm text-cyan-300 sm:text-base"
+          aria-label="Current professional focus"
         >
           <span className="mr-2 text-slate-500">const focus =</span>
 
@@ -161,7 +176,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 0.6 }}
-          className="mt-10 flex items-center gap-6"
+          className="mt-10 flex items-center justify-center gap-6"
         >
           {[
             {
@@ -184,8 +199,8 @@ export default function Hero() {
               key={label}
               data-cursor-hover
               href={href}
-              target="_blank"
-              rel="noreferrer"
+              target={label !== 'Email' ? '_blank' : undefined}
+              rel={label !== 'Email' ? 'noreferrer' : undefined}
               aria-label={label}
               className="text-slate-400 transition-colors hover:text-sky-300"
             >
@@ -199,7 +214,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.15, duration: 0.6 }}
-          className="mt-10 grid grid-cols-3 gap-4 sm:gap-8"
+          className="mx-auto mt-10 grid max-w-xl grid-cols-3 gap-4 sm:gap-8"
         >
           {stats.map((s) => (
             <div key={s.label} className="text-center">
@@ -220,7 +235,7 @@ export default function Hero() {
       <motion.a
         href="#about"
         data-cursor-hover
-        aria-label="Scroll down"
+        aria-label="Scroll down to About section"
         animate={{ y: [0, 8, 0] }}
         transition={{
           duration: 1.8,

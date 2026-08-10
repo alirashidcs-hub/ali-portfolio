@@ -10,36 +10,53 @@ import ProjectDetailsModal from '../ProjectDetailsModal'
 
 export default function FeaturedProjectsSection() {
   const [active, setActive] = useState<Project | null>(null)
-  const featured = projects.filter((p) => p.featured)
+
+  const featured = projects.filter((project) => project.featured)
 
   return (
-    <section id="projects" className="relative mx-auto max-w-6xl px-6 py-32">
+    <section
+      id="projects"
+      aria-labelledby="featured-projects-heading"
+    >
       <SectionHeading
         eyebrow={`${projects.length} Projects`}
-        title="Featured"
-        highlight="work"
-        description="A few of the builds I'm most proud of — from AI-powered platforms to 3D web experiences."
+        title="Ali Rashid's"
+        highlight="Featured Work"
+        description="Explore AI-powered applications, full-stack platforms, 3D web experiences, and software projects built by Ali Rashid, a Computer Science student and AI & Full-Stack Developer at UET Taxila."
         action={
           <Link
             data-cursor-hover
             to="/projects"
-            className="hidden items-center gap-1.5 rounded-full border border-slate-700 px-5 py-2.5 text-sm text-slate-300 transition-colors hover:border-sky-400 hover:text-sky-300 sm:flex"
+            className="group flex items-center gap-2 rounded-full border border-slate-700 px-5 py-2.5 text-sm text-slate-300 transition hover:border-sky-400/50 hover:text-white"
           >
-            View All Projects <ArrowRight size={14} />
+            View All Projects
+            <ArrowRight
+              size={14}
+              className="transition-transform group-hover:translate-x-1"
+            />
           </Link>
         }
       />
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        aria-label="Featured projects by Ali Rashid"
+      >
         {featured.map((project, i) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08, duration: 0.5 }}
+            transition={{
+              delay: i * 0.08,
+              duration: 0.5,
+            }}
           >
-            <ProjectCard project={project} onOpen={setActive} />
+            <ProjectCard
+              project={project}
+              onOpen={setActive}
+            />
           </motion.div>
         ))}
       </div>
@@ -48,13 +65,17 @@ export default function FeaturedProjectsSection() {
         <Link
           data-cursor-hover
           to="/projects"
-          className="flex items-center gap-1.5 rounded-full border border-slate-700 px-5 py-2.5 text-sm text-slate-300"
+          className="flex items-center gap-1.5 rounded-full border border-slate-700 px-5 py-2.5 text-sm text-slate-300 transition hover:border-sky-400/50 hover:text-white"
         >
-          View All Projects <ArrowRight size={14} />
+          View All Projects
+          <ArrowRight size={14} />
         </Link>
       </div>
 
-      <ProjectDetailsModal project={active} onClose={() => setActive(null)} />
+      <ProjectDetailsModal
+        project={active}
+        onClose={() => setActive(null)}
+      />
     </section>
   )
 }

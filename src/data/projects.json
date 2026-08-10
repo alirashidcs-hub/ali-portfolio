@@ -4,7 +4,7 @@
     "emoji": "🤖",
     "title": "Open Agent Studio",
     "description": "An open-source visual AI agent builder for designing, testing, configuring, and deploying AI agents.",
-    "longDescription": "Open Agent Studio is a full-stack platform for building and managing AI agents through a visual node-based workflow builder. It supports configurable AI models, real-time streaming execution, MCP tools, encrypted provider credentials, API key management, Redis-backed rate limiting, and secure agent deployment APIs.",
+    "longDescription": "Open Agent Studio is a full-stack AI agent platform created by Ali Rashid for building and managing AI agents through a visual node-based workflow builder. It supports configurable AI models, real-time streaming execution, MCP tools, encrypted provider credentials, API key management, Redis-backed rate limiting, and secure agent deployment APIs.",
     "category": "AI & Agents",
     "tags": [
       "Next.js",
@@ -30,7 +30,7 @@
     "emoji": "🏡",
     "title": "HomeVista 3D",
     "description": "AI-powered 3D real estate platform with an interactive master plan and immersive property visualization.",
-    "longDescription": "HomeVista 3D is an AI-powered 3D real estate platform featuring an interactive master plan, immersive property visualization, intelligent plot recommendations, real-time home customization, investment estimation, and Google Gemini AI integration.",
+    "longDescription": "HomeVista 3D is an AI-powered 3D real estate platform developed by Ali Rashid. It features an interactive master plan, immersive property visualization, intelligent plot recommendations, real-time home customization, investment estimation, and Google Gemini AI integration.",
     "category": "AI & 3D",
     "tags": [
       "React",
@@ -52,7 +52,7 @@
     "emoji": "👗",
     "title": "Aura Atelier",
     "description": "AI-powered 3D virtual fitting room and haute couture styling platform.",
-    "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform featuring an interactive Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive luxury styling experiences.",
+    "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform developed as part of Ali Rashid's exploration of AI, 3D web technologies, and interactive digital experiences. It features a Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive styling experiences.",
     "category": "AI & 3D",
     "tags": [
       "React",
@@ -74,7 +74,7 @@
     "emoji": "🥗",
     "title": "NutriAI Pakistan",
     "description": "AI-powered nutrition and health management platform built around local Pakistani cuisine.",
-    "longDescription": "NutriAI Pakistan is an AI-powered nutrition and health management platform featuring personalized Pakistani meal plans, BMI & calorie calculators, nutrition analytics, grocery management, healthy recipes, AI nutrition assistance, and an integrated admin dashboard.",
+    "longDescription": "NutriAI Pakistan is an AI-powered nutrition and health management platform designed around Pakistani cuisine. The project includes personalized meal planning, BMI and calorie calculations, nutrition analytics, grocery management, healthy recipes, AI nutrition assistance, and an integrated administration dashboard.",
     "category": "AI",
     "tags": [
       "React",
@@ -96,7 +96,7 @@
     "emoji": "🎤",
     "title": "InterviewAI",
     "description": "An AI-powered career readiness and interview coaching platform.",
-    "longDescription": "InterviewAI is an AI-powered career readiness and interview coaching platform designed to help students and professionals prepare for technical and behavioral interviews through intelligent mock interviews, resume optimization, and personalized performance analytics.",
+    "longDescription": "InterviewAI is an AI-powered career readiness and interview coaching platform developed to help students and professionals prepare for technical and behavioral interviews. It includes intelligent mock interviews, resume optimization, personalized feedback, and performance analytics.",
     "category": "AI",
     "tags": [
       "React",
@@ -118,7 +118,7 @@
     "emoji": "💪",
     "title": "FitNova AI",
     "description": "AI-powered fitness and wellness platform with an intelligent coach and health analytics.",
-    "longDescription": "FitNova AI is an AI-powered fitness and wellness platform featuring an intelligent fitness coach, workout tracking, habit management, health analytics, and interactive dashboards.",
+    "longDescription": "FitNova AI is an AI-powered fitness and wellness platform featuring an intelligent fitness coach, workout tracking, habit management, health analytics, and interactive dashboards. The project demonstrates Ali Rashid's interest in building AI-assisted applications and modern user experiences.",
     "category": "AI",
     "tags": [
       "React",
@@ -140,7 +140,7 @@
     "emoji": "💰",
     "title": "Finova AI",
     "description": "AI-powered personal finance and wealth management platform.",
-    "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern, responsive dashboard.",
+    "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern responsive dashboard.",
     "category": "AI",
     "tags": [
       "React",
@@ -162,7 +162,7 @@
     "emoji": "📚",
     "title": "StudyFlow AI",
     "description": "AI-powered study companion with note summarization, tutoring, and quiz generation.",
-    "longDescription": "StudyFlow AI is an AI-powered study companion featuring smart note summarization, AI tutoring, quiz generation, and productivity tools for students.",
+    "longDescription": "StudyFlow AI is an AI-powered study companion designed for students. It provides smart note summarization, AI tutoring, quiz generation, and productivity features to support learning and study organization.",
     "category": "AI",
     "tags": [
       "React",
@@ -184,7 +184,7 @@
     "emoji": "🎥",
     "title": "ReelFlow",
     "description": "A modern short-video social media platform with a mobile-first experience.",
-    "longDescription": "ReelFlow is a modern short-video social media platform with video sharing, authentication, user profiles, and a mobile-first user experience.",
+    "longDescription": "ReelFlow is a modern short-video social media platform featuring video sharing, authentication, user profiles, and a mobile-first user experience. The project demonstrates full-stack web development and modern application design.",
     "category": "Web App",
     "tags": [
       "React",
@@ -206,7 +206,7 @@
     "emoji": "🛠️",
     "title": "Chrono VeloSec Utility Suite",
     "description": "A C++ productivity toolkit demonstrating modern C++ programming concepts.",
-    "longDescription": "Chrono VeloSec Utility Suite is a C++ productivity toolkit featuring utilities for improving productivity and demonstrating modern C++ programming concepts.",
+    "longDescription": "Chrono VeloSec Utility Suite is a C++ productivity toolkit created to demonstrate modern C++ programming concepts, software design, problem solving, and practical utility development.",
     "category": "Systems & Tools",
     "tags": [
       "C++",
@@ -227,7 +227,7 @@
     "emoji": "🎮",
     "title": "Arcana Console Game Suite",
     "description": "A collection of console-based games built in C++ showcasing OOP and game logic.",
-    "longDescription": "Arcana Console Game Suite is a collection of console-based games developed in C++, showcasing object-oriented programming, game logic, and problem-solving skills.",
+    "longDescription": "Arcana Console Game Suite is a collection of console-based games developed in C++, showcasing object-oriented programming, game logic, algorithms, and problem-solving skills.",
     "category": "Systems & Tools",
     "tags": [
       "C++",
