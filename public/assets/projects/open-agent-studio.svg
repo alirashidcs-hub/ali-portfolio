@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#050816"/><stop offset="55%" stop-color="#111827"/><stop offset="100%" stop-color="#1e1b4b"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#8b5cf6"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="675" rx="36" fill="url(#bg)"/>
+<circle cx="1010" cy="120" r="180" fill="#7c3aed" opacity=".12"/>
+<circle cx="180" cy="560" r="220" fill="#06b6d4" opacity=".08"/>
+<g stroke="url(#accent)" stroke-width="4" fill="none" opacity=".7">
+  <path d="M220 390 L420 280 L610 390 L820 250"/>
+  <path d="M420 280 L420 160"/>
+  <path d="M610 390 L610 520"/>
+</g>
+<g fill="#111827" stroke="#38bdf8" stroke-width="3">
+  <rect x="160" y="335" width="120" height="90" rx="18"/>
+  <rect x="360" y="225" width="120" height="90" rx="18"/>
+  <rect x="550" y="345" width="120" height="90" rx="18"/>
+  <rect x="760" y="205" width="140" height="90" rx="18"/>
+</g>
+<g fill="#fff" font-family="Arial, Helvetica, sans-serif">
+  <text x="120" y="110" font-size="54" font-weight="700">Open Agent Studio</text>
+  <text x="124" y="155" font-size="24" fill="#a5b4fc">Open-source visual AI Agent Builder</text>
+  <text x="180" y="390" font-size="34">AI</text>
+  <text x="382" y="280" font-size="28">MODEL</text>
+  <text x="580" y="400" font-size="27">TOOLS</text>
+  <text x="782" y="260" font-size="26">DEPLOY</text>
+  <text x="120" y="615" font-size="22" fill="#cbd5e1">Next.js • TypeScript • MCP • PostgreSQL • Redis</text>
+</g>
+</svg>

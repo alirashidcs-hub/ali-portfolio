@@ -1,0 +1,66 @@
+[
+  {
+    "id": "t1",
+    "type": "education",
+    "title": "BS Computer Science",
+    "org": "University of Engineering and Technology (UET) Taxila",
+    "period": "2023 — Present",
+    "description": "Coursework spanning data structures, algorithms, digital logic design, and software engineering, alongside self-directed AI and full-stack projects."
+  },
+  {
+    "id": "t2",
+    "type": "leadership",
+    "title": "Hostel Mess Secretary & Price Controller",
+    "org": "UET Taxila",
+    "period": "Ongoing",
+    "description": "Manages mess budgeting and vendor pricing for a residential hostel, coordinating with staff and students to keep costs transparent and fair."
+  },
+  {
+    "id": "t8",
+    "type": "leadership",
+    "title": "UHP Engineering Team Coordinator",
+    "org": "UHP Engineering Team",
+    "period": "2026 — 2027",
+    "description": "Coordinates the UHP Engineering Team, supporting collaboration, team activities, and engineering initiatives while developing leadership and organizational skills."
+  },
+  {
+    "id": "t3",
+    "type": "leadership",
+    "title": "Member",
+    "org": "Wall of Hope (WOH) Society",
+    "period": "Ongoing",
+    "description": "Contributes to a student-run welfare society focused on community support initiatives across campus."
+  },
+  {
+    "id": "t4",
+    "type": "leadership",
+    "title": "Member",
+    "org": "UET Adventure Club",
+    "period": "Ongoing",
+    "description": "Helps organize and coordinate outdoor and team-building events for the university adventure community."
+  },
+  {
+    "id": "t5",
+    "type": "certificate",
+    "title": "Google AI Professional Certificate",
+    "org": "Google",
+    "period": "2026",
+    "description": "Capstone credential covering applied AI across research, writing, content creation, data analysis, and app building."
+  },
+  {
+    "id": "t6",
+    "type": "achievement",
+    "title": "23+ Certifications Earned",
+    "org": "Google, NVIDIA, Microsoft, Meta, Shopify, Coursera",
+    "period": "2025 — 2026",
+    "description": "Completed a self-driven certification track across AI, machine learning, deep learning, cybersecurity, programming, marketing, project management, e-commerce, and career development."
+  },
+  {
+    "id": "t7",
+    "type": "achievement",
+    "title": "14+ Shipped Projects",
+    "org": "Personal, Coursework & Freelance",
+    "period": "2025 — 2026",
+    "description": "Designed and built AI-powered, full-stack, and embedded-systems projects — from mock-interview coaching to Arduino-driven hardware builds."
+  }
+]

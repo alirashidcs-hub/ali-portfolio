@@ -1,0 +1,369 @@
+[
+  {
+    "id": "c01",
+    "title": "Google AI Professional Certificate",
+    "featured": true,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "AI",
+    "date": "2026-06-01",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Capstone credential for Google's AI Professional program, covering applied AI skills across research, writing, content, data, and app building.",
+    "skillsLearned": [
+      "AI Fundamentals",
+      "Applied AI Workflows"
+    ]
+  },
+  {
+    "id": "c02",
+    "title": "AI Fundamentals",
+    "featured": true,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Google",
+    "date": "2026-05-20",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Foundational concepts of artificial intelligence and how AI tools fit into everyday and professional workflows.",
+    "skillsLearned": [
+      "AI Concepts",
+      "AI Tool Literacy"
+    ]
+  },
+  {
+    "id": "c03",
+    "title": "AI for Brainstorming and Planning",
+    "featured": false,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Google",
+    "date": "2026-05-12",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Using AI tools to structure brainstorming sessions and turn loose ideas into actionable plans.",
+    "skillsLearned": [
+      "Ideation",
+      "AI-Assisted Planning"
+    ]
+  },
+  {
+    "id": "c04",
+    "title": "AI for Research and Insights",
+    "featured": false,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Google",
+    "date": "2026-05-05",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Applying AI tools to accelerate research and surface insights from large or messy information sources.",
+    "skillsLearned": [
+      "Research Workflows",
+      "Insight Synthesis"
+    ]
+  },
+  {
+    "id": "c05",
+    "title": "AI for Writing and Communicating",
+    "featured": false,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Google",
+    "date": "2026-04-28",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Using AI to draft, refine, and adapt written communication for different audiences and formats.",
+    "skillsLearned": [
+      "AI-Assisted Writing",
+      "Communication"
+    ]
+  },
+  {
+    "id": "c06",
+    "title": "AI for Content Creation",
+    "featured": false,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Google",
+    "date": "2026-04-20",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Applying AI tools across the content creation pipeline, from ideation to drafting to editing.",
+    "skillsLearned": [
+      "Content Strategy",
+      "AI Content Tools"
+    ]
+  },
+  {
+    "id": "c07",
+    "title": "AI for Data Analysis",
+    "featured": false,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "AI",
+    "date": "2026-04-10",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Using AI-assisted tools to explore datasets, spot patterns, and communicate data-driven findings.",
+    "skillsLearned": [
+      "Data Analysis",
+      "AI-Assisted Analytics"
+    ]
+  },
+  {
+    "id": "c08",
+    "title": "AI for App Building",
+    "featured": false,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "AI",
+    "date": "2026-04-01",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Applying AI tools and APIs to prototype and build functional application features.",
+    "skillsLearned": [
+      "AI Prototyping",
+      "App Development"
+    ]
+  },
+  {
+    "id": "c09",
+    "title": "Introduction to Artificial Intelligence (AI)",
+    "featured": false,
+    "issuer": "Coursera",
+    "issuerLogo": "",
+    "category": "AI",
+    "date": "2026-02-15",
+    "image": "",
+    "credentialUrl": "",
+    "description": "A survey of core AI concepts, history, and real-world applications.",
+    "skillsLearned": [
+      "AI Foundations"
+    ]
+  },
+  {
+    "id": "c10",
+    "title": "AI Agent Fundamentals with Azure AI Foundry",
+    "featured": true,
+    "issuer": "Microsoft",
+    "issuerLogo": "",
+    "category": "Microsoft",
+    "date": "2026-02-01",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Building and configuring AI agents using Microsoft's Azure AI Foundry platform.",
+    "skillsLearned": [
+      "Azure AI Foundry",
+      "AI Agents"
+    ]
+  },
+  {
+    "id": "c11",
+    "title": "Foundations of Cybersecurity",
+    "featured": true,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Cybersecurity",
+    "date": "2026-01-18",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Core cybersecurity principles, common threats, and foundational defensive practices.",
+    "skillsLearned": [
+      "Cybersecurity Basics",
+      "Threat Awareness"
+    ]
+  },
+  {
+    "id": "c12",
+    "title": "Crash Course on Python",
+    "featured": true,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Programming",
+    "date": "2025-12-10",
+    "image": "",
+    "credentialUrl": "",
+    "description": "A fast-paced introduction to Python syntax, control flow, and problem-solving.",
+    "skillsLearned": [
+      "Python"
+    ]
+  },
+  {
+    "id": "c13",
+    "title": "Create Your First Python Program",
+    "featured": false,
+    "issuer": "Coursera Project Network",
+    "issuerLogo": "",
+    "category": "Programming",
+    "date": "2025-11-25",
+    "image": "",
+    "credentialUrl": "",
+    "description": "A guided project building a first working Python program end to end.",
+    "skillsLearned": [
+      "Python",
+      "Program Structure"
+    ]
+  },
+  {
+    "id": "c14",
+    "title": "Create a Google Ads Search Campaign",
+    "featured": false,
+    "issuer": "Coursera Project Network",
+    "issuerLogo": "",
+    "category": "Marketing & Design",
+    "date": "2025-10-14",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Hands-on setup of a search advertising campaign using Google Ads.",
+    "skillsLearned": [
+      "Google Ads",
+      "Search Marketing"
+    ]
+  },
+  {
+    "id": "c15",
+    "title": "Use Canva to Design Digital Course Collateral",
+    "featured": false,
+    "issuer": "Coursera Project Network",
+    "issuerLogo": "",
+    "category": "Marketing & Design",
+    "date": "2025-09-20",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Designing digital course materials and visual collateral using Canva.",
+    "skillsLearned": [
+      "Canva",
+      "Visual Design"
+    ]
+  },
+  {
+    "id": "c16",
+    "title": "Preparation for Job Interviews",
+    "featured": true,
+    "issuer": "Coursera",
+    "issuerLogo": "",
+    "category": "Career Development",
+    "date": "2025-08-05",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Structured preparation for technical and behavioral job interviews.",
+    "skillsLearned": [
+      "Interview Skills",
+      "Career Readiness"
+    ]
+  },
+  {
+    "id": "c17",
+    "title": "Build a Free Website with WordPress",
+    "featured": false,
+    "issuer": "Coursera Project Network",
+    "issuerLogo": "",
+    "category": "Web Development",
+    "date": "2025-07-01",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Building and publishing a functional website using WordPress.",
+    "skillsLearned": [
+      "WordPress",
+      "Website Building"
+    ]
+  },
+  {
+    "id": "c18",
+    "title": "NVIDIA: Fundamentals of Machine Learning",
+    "featured": true,
+    "issuer": "NVIDIA",
+    "issuerLogo": "",
+    "category": "Artificial Intelligence",
+    "date": "2026-08-12",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Foundational machine learning concepts and practical understanding of core ML workflows.",
+    "skillsLearned": [
+      "Machine Learning",
+      "AI Fundamentals"
+    ]
+  },
+  {
+    "id": "c19",
+    "title": "NVIDIA: Fundamentals of Deep Learning",
+    "featured": true,
+    "issuer": "NVIDIA",
+    "issuerLogo": "",
+    "category": "Artificial Intelligence",
+    "date": "2026-08-12",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Foundational deep learning concepts and an introduction to neural-network-based learning.",
+    "skillsLearned": [
+      "Deep Learning",
+      "Neural Networks"
+    ]
+  },
+  {
+    "id": "c20",
+    "title": "Create Your E-commerce Store with Shopify",
+    "featured": false,
+    "issuer": "Shopify",
+    "issuerLogo": "",
+    "category": "E-Commerce & Web Development",
+    "date": "",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Practical introduction to creating and setting up an e-commerce store with Shopify.",
+    "skillsLearned": [
+      "Shopify",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "c21",
+    "title": "Foundations of Project Management",
+    "featured": true,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Project Management",
+    "date": "",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Foundational project management concepts, planning, collaboration, and project lifecycle practices.",
+    "skillsLearned": [
+      "Project Management",
+      "Planning",
+      "Collaboration"
+    ]
+  },
+  {
+    "id": "c22",
+    "title": "Project Execution: Running the Project",
+    "featured": true,
+    "issuer": "Google",
+    "issuerLogo": "",
+    "category": "Project Management",
+    "date": "",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Practical project execution concepts focused on coordinating work, communication, and delivering project outcomes.",
+    "skillsLearned": [
+      "Project Execution",
+      "Team Coordination"
+    ]
+  },
+  {
+    "id": "c23",
+    "title": "Marketing Analytics Foundation",
+    "featured": true,
+    "issuer": "Meta",
+    "issuerLogo": "",
+    "category": "Marketing & Analytics",
+    "date": "",
+    "image": "",
+    "credentialUrl": "",
+    "description": "Foundational marketing analytics concepts and data-driven approaches to understanding marketing performance.",
+    "skillsLearned": [
+      "Marketing Analytics",
+      "Data Analysis"
+    ]
+  }
+]

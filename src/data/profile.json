@@ -1,0 +1,35 @@
+{
+  "name": "Ali Rashid",
+  "degree": "BS Computer Science",
+  "university": "University of Engineering and Technology (UET) Taxila",
+  "tagline": "AI & Full-Stack Developer",
+  "careerGoal": "To become a Software Engineer specializing in Artificial Intelligence, Full-Stack Development, and modern software engineering while building impactful AI-powered products and contributing to open-source projects.",
+  "bio": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology (UET) Taxila with a strong interest in Artificial Intelligence, Full-Stack Development, 3D Web Technologies, and Software Engineering. He enjoys building AI-powered applications, modern web experiences, and practical software solutions using technologies such as React, TypeScript, Node.js, Three.js, Python, and C++.",
+  "coursework": [
+    "Data Structures & Algorithms",
+    "Object-Oriented Programming",
+    "Digital Logic Design",
+    "Database Systems",
+    "Operating Systems",
+    "Computer Networks",
+    "Software Engineering",
+    "Artificial Intelligence"
+  ],
+  "roles": [
+    "AI Developer",
+    "Full-Stack Developer",
+    "React Developer",
+    "Three.js Developer",
+    "Software Engineer"
+  ],
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/ali-rashid-cs/",
+    "github": "https://github.com/alirashidcs-hub",
+    "githubUsername": "alirashidcs-hub",
+    "email": "ar2701699@gmail.com",
+    "phone": "+92 305 7357819",
+    "location": "Taxila, Punjab, Pakistan"
+  },
+  "resumeUrl": "/assets/Ali_Rashid_Resume.pdf",
+  "pinnedRepos": []
+}
