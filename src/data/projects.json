@@ -1,5 +1,5 @@
 [
-  {
+ {
     "id": "open-agent-studio",
     "emoji": "🤖",
     "title": "Open Agent Studio",
@@ -48,27 +48,40 @@
     "githubUrl": "https://github.com/alirashidcs-hub/HomeVista-3D"
   },
   {
-    "id": "aura-atelier",
-    "emoji": "👗",
-    "title": "Aura Atelier",
-    "description": "AI-powered 3D virtual fitting room and haute couture styling platform.",
-    "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform developed as part of Ali Rashid's exploration of AI, 3D web technologies, and interactive digital experiences. It features a Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive styling experiences.",
-    "category": "AI & 3D",
-    "tags": [
-      "React",
-      "Three.js",
-      "Google Drive API"
-    ],
-    "featured": true,
-    "date": "2026-06-20",
-    "status": "Completed",
-    "images": [
-      "/assets/projects/aura-atelier.svg"
-    ],
-    "demoVideoUrl": "https://drive.google.com/file/d/1FbKl026pvzWHpGtvLoXbC-ksNulQJKEj/view?usp=sharing",
-    "liveUrl": "",
-    "githubUrl": "https://github.com/alirashidcs-hub/Aura-Atelier"
-  },
+  "id": "earth-explorer",
+  "emoji": "🌍",
+  "title": "Earth Explorer",
+  "description": "An immersive interactive 3D Earth experience built with Next.js, TypeScript, Three.js, and Tailwind CSS.",
+  "longDescription": "Earth Explorer is an interactive 3D Earth experience that allows users to explore a realistic digital globe, rotate and zoom the planet, switch between day and night modes, explore countries and continents, search for locations, discover random destinations with Surprise Me, and enter fullscreen planetarium mode. The project also includes SEO-friendly country and continent pages, dynamic sitemap generation, robots.txt, structured metadata, and a responsive experience across desktop and mobile.",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Three.js",
+    "Tailwind CSS"
+  ],
+  "liveDemo": "https://earth-explorer-beta.vercel.app/",
+  "github": "https://github.com/alirashidcs-hub/earth-explorer"
+},
+{
+  "id": "foodverse-3d",
+  "emoji": "🍔",
+  "title": "FoodVerse 3D",
+  "description": "A luxury digital culinary gallery combining cinematic food photography, interactive 3D visualization, and futuristic web design.",
+  "longDescription": "FoodVerse 3D is an immersive digital culinary gallery featuring 16 curated food experiences, cinematic animations, interactive 3D visualization architecture, high-quality food photography, multiple lighting environments, responsive layouts, dynamic food categories, and individual food detail pages. The platform uses a photography-first approach while supporting genuine GLB models through an automatic asset detection system.",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Three.js",
+    "React Three Fiber",
+    "Drei",
+    "Tailwind CSS",
+    "Framer Motion"
+  ],
+  "liveDemo": "https://foodverse-3d.vercel.app/",
+  "github": "https://github.com/alirashidcs-hub/FoodVerse-3D"
+},
   {
     "id": "nutriai-pakistan",
     "emoji": "🥗",
@@ -90,6 +103,72 @@
     "demoVideoUrl": "",
     "liveUrl": "https://spirited-nutri-pak-plan.base44.app/",
     "githubUrl": "https://github.com/alirashidcs-hub/NutriAI-Pakistan"
+  },
+  {
+    "id": "reelflow",
+    "emoji": "🎥",
+    "title": "ReelFlow",
+    "description": "A modern short-video social media platform with a mobile-first experience.",
+    "longDescription": "ReelFlow is a modern short-video social media platform featuring video sharing, authentication, user profiles, and a mobile-first user experience. The project demonstrates full-stack web development and modern application design.",
+    "category": "Web App",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Node.js"
+    ],
+    "featured": false,
+    "date": "2025-11-30",
+    "status": "Completed",
+    "images": [
+      "/assets/projects/reelflow.svg"
+    ],
+    "demoVideoUrl": "",
+    "liveUrl": "https://reel-flow-nine.vercel.app/",
+    "githubUrl": "https://github.com/alirashidcs-hub/reel-flow-live"
+  },
+   {
+    "id": "finova-ai",
+    "emoji": "💰",
+    "title": "Finova AI",
+    "description": "AI-powered personal finance and wealth management platform.",
+    "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern responsive dashboard.",
+    "category": "AI",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Node.js"
+    ],
+    "featured": true,
+    "date": "2026-02-14",
+    "status": "Completed",
+    "images": [
+      "/assets/projects/finova-ai.svg"
+    ],
+    "demoVideoUrl": "",
+    "liveUrl": "https://finova-ai.ai.studio/",
+    "githubUrl": "https://github.com/alirashidcs-hub/Finova-AI"
+  },
+  {
+    "id": "aura-atelier",
+    "emoji": "👗",
+    "title": "Aura Atelier",
+    "description": "AI-powered 3D virtual fitting room and haute couture styling platform.",
+    "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform developed as part of Ali Rashid's exploration of AI, 3D web technologies, and interactive digital experiences. It features a Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive styling experiences.",
+    "category": "AI & 3D",
+    "tags": [
+      "React",
+      "Three.js",
+      "Google Drive API"
+    ],
+    "featured": true,
+    "date": "2026-06-20",
+    "status": "Completed",
+    "images": [
+      "/assets/projects/aura-atelier.svg"
+    ],
+    "demoVideoUrl": "https://drive.google.com/file/d/1FbKl026pvzWHpGtvLoXbC-ksNulQJKEj/view?usp=sharing",
+    "liveUrl": "",
+    "githubUrl": "https://github.com/alirashidcs-hub/Aura-Atelier"
   },
   {
     "id": "interviewai",
@@ -136,28 +215,6 @@
     "githubUrl": "https://github.com/alirashidcs-hub/FitNova-AI"
   },
   {
-    "id": "finova-ai",
-    "emoji": "💰",
-    "title": "Finova AI",
-    "description": "AI-powered personal finance and wealth management platform.",
-    "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern responsive dashboard.",
-    "category": "AI",
-    "tags": [
-      "React",
-      "TypeScript",
-      "Node.js"
-    ],
-    "featured": true,
-    "date": "2026-02-14",
-    "status": "Completed",
-    "images": [
-      "/assets/projects/finova-ai.svg"
-    ],
-    "demoVideoUrl": "",
-    "liveUrl": "https://finova-ai.ai.studio/",
-    "githubUrl": "https://github.com/alirashidcs-hub/Finova-AI"
-  },
-  {
     "id": "studyflow-ai",
     "emoji": "📚",
     "title": "StudyFlow AI",
@@ -178,28 +235,6 @@
     "demoVideoUrl": "",
     "liveUrl": "https://studyflow-ai-2.ai.studio",
     "githubUrl": "https://github.com/alirashidcs-hub/StudyFlow-AI"
-  },
-  {
-    "id": "reelflow",
-    "emoji": "🎥",
-    "title": "ReelFlow",
-    "description": "A modern short-video social media platform with a mobile-first experience.",
-    "longDescription": "ReelFlow is a modern short-video social media platform featuring video sharing, authentication, user profiles, and a mobile-first user experience. The project demonstrates full-stack web development and modern application design.",
-    "category": "Web App",
-    "tags": [
-      "React",
-      "TypeScript",
-      "Node.js"
-    ],
-    "featured": false,
-    "date": "2025-11-30",
-    "status": "Completed",
-    "images": [
-      "/assets/projects/reelflow.svg"
-    ],
-    "demoVideoUrl": "",
-    "liveUrl": "https://reel-flow-nine.vercel.app/",
-    "githubUrl": "https://github.com/alirashidcs-hub/reel-flow-live"
   },
   {
     "id": "chrono-velosec",
