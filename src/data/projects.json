@@ -53,15 +53,23 @@
   "title": "Earth Explorer",
   "description": "An immersive interactive 3D Earth experience built with Next.js, TypeScript, Three.js, and Tailwind CSS.",
   "longDescription": "Earth Explorer is an interactive 3D Earth experience that allows users to explore a realistic digital globe, rotate and zoom the planet, switch between day and night modes, explore countries and continents, search for locations, discover random destinations with Surprise Me, and enter fullscreen planetarium mode. The project also includes SEO-friendly country and continent pages, dynamic sitemap generation, robots.txt, structured metadata, and a responsive experience across desktop and mobile.",
-  "technologies": [
+  "category": "3D & Interactive",
+  "tags": [
     "Next.js",
     "TypeScript",
     "React",
     "Three.js",
     "Tailwind CSS"
   ],
-  "liveDemo": "https://earth-explorer-beta.vercel.app/",
-  "github": "https://github.com/alirashidcs-hub/earth-explorer"
+  "featured": true,
+  "date": "2026-07-18",
+  "status": "Completed",
+  "images": [
+    "/assets/projects/earth-explorer.svg"
+  ],
+  "demoVideoUrl": "",
+  "liveUrl": "https://earth-explorer-beta.vercel.app/",
+  "githubUrl": "https://github.com/alirashidcs-hub/earth-explorer"
 },
 {
   "id": "foodverse-3d",
@@ -69,7 +77,8 @@
   "title": "FoodVerse 3D",
   "description": "A luxury digital culinary gallery combining cinematic food photography, interactive 3D visualization, and futuristic web design.",
   "longDescription": "FoodVerse 3D is an immersive digital culinary gallery featuring 16 curated food experiences, cinematic animations, interactive 3D visualization architecture, high-quality food photography, multiple lighting environments, responsive layouts, dynamic food categories, and individual food detail pages. The platform uses a photography-first approach while supporting genuine GLB models through an automatic asset detection system.",
-  "technologies": [
+  "category": "3D & Interactive",
+  "tags": [
     "Next.js",
     "TypeScript",
     "React",
@@ -79,8 +88,15 @@
     "Tailwind CSS",
     "Framer Motion"
   ],
-  "liveDemo": "https://foodverse-3d.vercel.app/",
-  "github": "https://github.com/alirashidcs-hub/FoodVerse-3D"
+  "featured": true,
+  "date": "2026-08-11",
+  "status": "Completed",
+  "images": [
+    "/assets/projects/foodverse-3d.svg"
+  ],
+  "demoVideoUrl": "",
+  "liveUrl": "https://foodverse-3d.vercel.app/",
+  "githubUrl": "https://github.com/alirashidcs-hub/FoodVerse-3D"
 },
   {
     "id": "nutriai-pakistan",
