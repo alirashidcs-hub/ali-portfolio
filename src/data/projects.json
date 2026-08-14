@@ -19,7 +19,7 @@
     "date": "2026-08-09",
     "status": "In Progress",
     "images": [
-      "/assets/projects/open-agent-studio.svg"
+      "/assets/projects/open-agent-studio.svg.jpeg"
     ],
     "demoVideoUrl": "",
     "liveUrl": "https://open-agent-studio.vercel.app/",
@@ -41,7 +41,7 @@
     "date": "2026-07-15",
     "status": "Completed",
     "images": [
-      "/assets/projects/homevista-3d.svg"
+      "/assets/projects/homevista-3d.svg.png"
     ],
     "demoVideoUrl": "",
     "liveUrl": "https://homevista-3d.ai.studio/",
@@ -65,7 +65,7 @@
   "date": "2026-07-18",
   "status": "Completed",
   "images": [
-    "/assets/projects/earth-explorer.svg"
+    "/assets/projects/earth-explorer.svg.png"
   ],
   "demoVideoUrl": "",
   "liveUrl": "https://earth-explorer-beta.vercel.app/",
@@ -92,7 +92,7 @@
   "date": "2026-08-11",
   "status": "Completed",
   "images": [
-    "/assets/projects/foodverse-3d.svg"
+    "/assets/projects/foodverse-3d.svg.png"
   ],
   "demoVideoUrl": "",
   "liveUrl": "https://foodverse-3d.vercel.app/",
@@ -114,7 +114,7 @@
     "date": "2026-05-10",
     "status": "Completed",
     "images": [
-      "/assets/projects/nutriai-pakistan.svg"
+      "/assets/projects/nutriai-pakistan.svg.jpeg"
     ],
     "demoVideoUrl": "",
     "liveUrl": "https://spirited-nutri-pak-plan.base44.app/",
@@ -136,7 +136,7 @@
     "date": "2025-11-30",
     "status": "Completed",
     "images": [
-      "/assets/projects/reelflow.svg"
+      "/assets/projects/reelflow.svg.png"
     ],
     "demoVideoUrl": "",
     "liveUrl": "https://reel-flow-nine.vercel.app/",
@@ -158,7 +158,7 @@
     "date": "2026-02-14",
     "status": "Completed",
     "images": [
-      "/assets/projects/finova-ai.svg"
+      "/assets/projects/finova-ai.svg.png"
     ],
     "demoVideoUrl": "",
     "liveUrl": "https://finova-ai.ai.studio/",
@@ -180,7 +180,7 @@
     "date": "2026-06-20",
     "status": "Completed",
     "images": [
-      "/assets/projects/aura-atelier.svg"
+      "/assets/projects/aura-atelier.svg.png"
     ],
     "demoVideoUrl": "https://drive.google.com/file/d/1FbKl026pvzWHpGtvLoXbC-ksNulQJKEj/view?usp=sharing",
     "liveUrl": "",
@@ -202,7 +202,7 @@
     "date": "2026-04-18",
     "status": "Completed",
     "images": [
-      "/assets/projects/interviewai.svg"
+      "/assets/projects/interviewai.svg.png"
     ],
     "demoVideoUrl": "https://drive.google.com/file/d/11Ik6kOu4iAPaccorrg7MXcuU7nSvNW_L/view?usp=sharing",
     "liveUrl": "",
@@ -224,7 +224,7 @@
     "date": "2026-03-22",
     "status": "Completed",
     "images": [
-      "/assets/projects/fitnova-ai.svg"
+      "/assets/projects/fitnova-ai.svg.png"
     ],
     "demoVideoUrl": "https://drive.google.com/file/d/1nc2mGDUSCfdaH4Gp5cbWqkvXo1yUCF2g/view?usp=sharing",
     "liveUrl": "",
@@ -246,7 +246,7 @@
     "date": "2026-01-08",
     "status": "Completed",
     "images": [
-      "/assets/projects/studyflow-ai.svg"
+      "/assets/projects/studyflow-ai.svg.png"
     ],
     "demoVideoUrl": "",
     "liveUrl": "https://studyflow-ai-2.ai.studio",
@@ -267,7 +267,7 @@
     "date": "2025-09-05",
     "status": "Completed",
     "images": [
-      "/assets/projects/chrono-velosec.svg"
+      "/assets/projects/chrono-velosec.svg.png"
     ],
     "demoVideoUrl": "",
     "liveUrl": "",
@@ -288,7 +288,7 @@
     "date": "2025-07-12",
     "status": "Completed",
     "images": [
-      "/assets/projects/arcana-console.svg"
+      "/assets/projects/arcana-console.svg.png"
     ],
     "demoVideoUrl": "",
     "liveUrl": "",
