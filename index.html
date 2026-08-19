@@ -12,25 +12,27 @@
 
     <meta
       name="description"
-      content="Ali Rashid is a BS Computer Science student at the University of Engineering and Technology (UET) Taxila and an AI & Full-Stack Developer building modern AI-powered web applications with React, Node.js, Three.js, Python, and C++."
+      content="Ali Rashid is a BS Computer Science student at UET Taxila, Pakistan, and an AI & Full-Stack Developer building AI agents, intelligent web applications, and interactive 3D web experiences with React, TypeScript, Node.js, Python, and Three.js."
     />
 
     <meta name="author" content="Ali Rashid" />
 
     <meta
       name="keywords"
-      content="Ali Rashid, Ali Rashid UET Taxila, Ali Rashid Computer Science, Ali Rashid developer, Ali Rashid AI, Ali Rashid Pakistan, AI Developer, Full-Stack Developer, React Developer, Node.js Developer, Three.js Developer, UET Taxila, Computer Science UET Taxila"
+      content="Ali Rashid, Ali Rashid UET Taxila, Ali Rashid UET, Ali Rashid Computer Science, Ali Rashid AI Developer, Ali Rashid Full Stack Developer, Ali Rashid Pakistan, UET Taxila Computer Science, AI Developer Pakistan, AI Agents, Full-Stack Developer, React Developer, TypeScript Developer, Next.js Developer, Node.js Developer, Three.js Developer, 3D Web Applications, Artificial Intelligence, Machine Learning"
     />
 
     <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
 
     <!-- Google Search Console Verification -->
-    <!-- Replace YOUR_GOOGLE_VERIFICATION_CODE with the code Google gives you -->
     <meta
-  name="google-site-verification"
-  content="P24gT5UG67vq-XixxjMs2cqVyQNK-olhD_tOwBt1E64"
-/>
+      name="google-site-verification"
+      content="P24gT5UG67vq-XixxjMs2cqVyQNK-olhD_tOwBt1E64"
+    />
 
     <!-- Canonical URL -->
     <link
@@ -48,7 +50,7 @@
 
     <meta
       property="og:description"
-      content="Official portfolio of Ali Rashid — BS Computer Science student at UET Taxila, AI enthusiast and Full-Stack Developer."
+      content="Official portfolio of Ali Rashid — BS Computer Science student at UET Taxila, Pakistan, focused on AI, AI agents, Full-Stack Development, and 3D Web Applications."
     />
 
     <meta property="og:type" content="website" />
@@ -76,12 +78,12 @@
 
     <meta
       name="twitter:title"
-      content="Ali Rashid | AI & Full-Stack Developer"
+      content="Ali Rashid | AI & Full-Stack Developer | UET Taxila"
     />
 
     <meta
       name="twitter:description"
-      content="Portfolio of Ali Rashid — BS Computer Science student at UET Taxila, AI enthusiast and Full-Stack Developer."
+      content="Portfolio of Ali Rashid — BS Computer Science student at UET Taxila, Pakistan, focused on AI, AI agents, Full-Stack Development, and 3D Web Applications."
     />
 
     <meta
@@ -95,17 +97,41 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "@id": "https://ali-rashid-portfolio.vercel.app/#person",
+
         "name": "Ali Rashid",
+
         "url": "https://ali-rashid-portfolio.vercel.app/",
+
         "jobTitle": "AI & Full-Stack Developer",
-        "description": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology (UET) Taxila and an AI & Full-Stack Developer interested in Artificial Intelligence, modern web development, 3D web technologies, and software engineering.",
-        "alumniOf": {
+
+        "description": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology, Taxila, Pakistan, focused on Artificial Intelligence, AI Agents, Full-Stack Development, and 3D Web Applications.",
+
+        "affiliation": {
           "@type": "CollegeOrUniversity",
-          "name": "University of Engineering and Technology (UET) Taxila"
+          "name": "University of Engineering and Technology, Taxila",
+          "url": "https://www.uettaxila.edu.pk/"
         },
+
         "sameAs": [
           "https://www.linkedin.com/in/ali-rashid-cs/",
           "https://github.com/alirashidcs-hub"
+        ],
+
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "AI Agents",
+          "Machine Learning",
+          "Full-Stack Development",
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "Three.js",
+          "Python",
+          "C++",
+          "JavaScript",
+          "PostgreSQL",
+          "3D Web Applications"
         ]
       }
     </script>
@@ -122,25 +148,25 @@
     <!-- GitHub Pages SPA fallback -->
     <script>
       (function (l) {
-        var params = new URLSearchParams(l.search)
-        var p = params.get('p')
+        var params = new URLSearchParams(l.search);
+        var p = params.get("p");
 
         if (p) {
-          var q = params.get('q')
+          var q = params.get("q");
 
-          p = p.replace(/~and~/g, '&')
-          q = q ? q.replace(/~and~/g, '&') : ''
+          p = p.replace(/~and~/g, "&");
+          q = q ? q.replace(/~and~/g, "&") : "";
 
           window.history.replaceState(
             null,
-            '',
+            "",
             l.pathname.slice(0, -1) +
               p +
-              (q ? '?' + q : '') +
+              (q ? "?" + q : "") +
               l.hash
-          )
+          );
         }
-      })(window.location)
+      })(window.location);
     </script>
   </head>
 
