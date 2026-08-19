@@ -25,6 +25,33 @@
     "liveUrl": "https://open-agent-studio.vercel.app/",
     "githubUrl": "https://github.com/alirashidcs-hub/open-agent-studio"
   },
+ {
+  "id": "cityverse-3d",
+  "emoji": "🏙️",
+  "title": "CityVerse — AI-Powered 3D Smart City Digital Twin",
+  "description": "An interactive 3D smart city digital twin for visualizing, simulating, and managing urban infrastructure, traffic, energy, weather, and emergency scenarios.",
+  "longDescription": "CityVerse is an AI-powered 3D Smart City Digital Twin created by Ali Rashid for exploring and simulating a procedurally generated smart city in real time. It features eight interactive districts including Downtown, Residential, Commercial, Industrial, University, Airport, Hospital, and Shopping. The platform includes animated traffic, dynamic time-of-day lighting, realistic weather modes, energy-flow visualization, building energy states, simulation controls, construction and road-closure tools, and emergency simulations. Built with Three.js and WebGL, CityVerse transforms complex urban data into an immersive, interactive digital environment for smart-city visualization and decision-making.",
+  "category": "3D & Smart Cities",
+  "tags": [
+    "Three.js",
+    "WebGL",
+    "3D",
+    "Smart City",
+    "Digital Twin",
+    "AI",
+    "Simulation",
+    "Data Visualization"
+  ],
+  "featured": true,
+  "date": "2026-08-20",
+  "status": "Completed",
+  "images": [
+    "/assets/projects/cityverse-3d.png.jpeg"
+  ],
+  "demoVideoUrl": "",
+  "liveUrl": "https://cityverse-3d-smart-city.vercel.app/",
+  "githubUrl": "https://github.com/alirashidcs-hub/cityverse-3d-smart-city"
+},
   {
     "id": "homevista-3d",
     "emoji": "🏡",
