@@ -7,6 +7,7 @@ const quickLinks = [
   { to: '/#skills', label: 'Skills' },
   { to: '/projects', label: 'Projects' },
   { to: '/certificates', label: 'Certificates' },
+  { to: '/publications', label: 'Publications' },
   { to: '/#leadership', label: 'Timeline' },
   { to: '/#resume', label: 'Resume' },
   { to: '/#contact', label: 'Contact' },

@@ -30,6 +30,17 @@ export type Certificate = {
   skillsLearned?: string[]
   featured: boolean
 }
+export type Publication = {
+  id: string
+  title: string
+  description: string
+  platform: string
+  date: string
+  category: string
+  tags: string[]
+  url: string
+  featured: boolean
+}
 
 export type SkillItem = { name: string; level: number }
 export type SkillGroup = { category: string; items: SkillItem[] }

@@ -8,6 +8,7 @@ const sectionLinks = [
   { hash: '#skills', label: 'Skills' },
   { hash: '#projects', label: 'Projects' },
   { hash: '#certificates', label: 'Certificates' },
+  { hash: '#publications', label: 'Publications' },
   { hash: '#leadership', label: 'Timeline' },
   { hash: '#github', label: 'GitHub' },
   { hash: '#resume', label: 'Resume' },
@@ -17,6 +18,7 @@ const sectionLinks = [
 const pageLinks = [
   { to: '/projects', label: 'All Projects' },
   { to: '/certificates', label: 'All Certificates' },
+  { to: '/publications', label: 'Publications' },
 ]
 
 export default function Navbar() {
@@ -44,18 +46,34 @@ export default function Navbar() {
         </Link>
 
         <ul className="hidden gap-5 lg:flex">
-          {sectionLinks.map((l) => (
-            <li key={l.hash}>
-              <Link
-                data-cursor-hover
-                to={`/${l.hash}`}
-                className="font-mono text-xs uppercase tracking-widest text-slate-400 transition-colors hover:text-sky-300"
-              >
-                {l.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+  {sectionLinks.map((l) => (
+    <li key={l.hash}>
+      <Link
+        data-cursor-hover
+        to={`/${l.hash}`}
+        className="font-mono text-xs uppercase tracking-widest text-slate-400 transition-colors hover:text-sky-300"
+      >
+        {l.label}
+      </Link>
+    </li>
+  ))}
+
+  <li>
+    <NavLink
+      data-cursor-hover
+      to="/publications"
+      className={({ isActive }) =>
+        `font-mono text-xs uppercase tracking-widest transition-colors ${
+          isActive
+            ? 'text-sky-300'
+            : 'text-slate-400 hover:text-sky-300'
+        }`
+      }
+    >
+      Publications
+    </NavLink>
+  </li>
+</ul>
 
         <button
           data-cursor-hover

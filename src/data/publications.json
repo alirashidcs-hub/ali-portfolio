@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pub-01",
+    "title": "Pictures Can Show Almost Anything. Can They Explain Everything?",
+    "description": "An exploration of visual AI, its epistemological limitations, and how the human premium is reshaping traditional art and design.",
+    "platform": "Medium",
+    "date": "2026-08-21",
+    "category": "Artificial Intelligence",
+    "tags": ["AI", "Visual AI", "Art & Design"],
+    "url": "https://medium.com/@ar2701699/can-ai-replace-everything-with-pictures-6f4a542fd334",
+    "featured": true
+  },
+  {
+    "id": "pub-02",
+    "title": "CityVerse: Building an AI-Powered 3D Smart City Digital Twin",
+    "description": "An interactive 3D Smart City Digital Twin combining AI, real-time simulation concepts, and immersive web technology.",
+    "platform": "Medium",
+    "date": "2026-08-20",
+    "category": "Artificial Intelligence",
+    "tags": ["AI", "3D Web", "Digital Twin"],
+    "url": "https://medium.com/@ar2701699/cityverse-building-an-ai-powered-3d-smart-city-digital-twin-a70fd55286a1",
+    "featured": true
+  },
+  {
+    "id": "pub-03",
+    "title": "FoodVerse 3D: Reimagining Food Exploration Through Interactive 3D Web Experiences",
+    "description": "A detailed look at FoodVerse 3D, an immersive web experience combining interactive 3D food visualization, cinematic design, and modern web technologies.",
+    "platform": "Medium",
+    "date": "2026-08-16",
+    "category": "3D Web Development",
+    "tags": ["Three.js", "3D Web", "Interactive Design"],
+    "url": "https://medium.com/@ar2701699/foodverse-3d-reimagining-food-exploration-through-interactive-3d-web-experiences-cd7e8a4edd6e",
+    "featured": true
+  },
+  {
+    "id": "pub-04",
+    "title": "Earth Explorer: Building an Interactive 3D Planet Experience for the Web",
+    "description": "An exploration of Earth Explorer, an interactive 3D planet experience built with Three.js and modern web technologies.",
+    "platform": "Medium",
+    "date": "2026-08-13",
+    "category": "3D Web Development",
+    "tags": ["Three.js", "3D", "Web Development"],
+    "url": "https://medium.com/@ar2701699/earth-explorer-building-an-interactive-3d-planet-experience-for-the-web-c4f5760bd663",
+    "featured": true
+  },
+  {
+    "id": "pub-05",
+    "title": "Open Agent Studio: Building a Visual Platform for AI Agent Development",
+    "description": "An exploration of Open Agent Studio, an open-source visual AI agent builder designed to make agent development more accessible.",
+    "platform": "Medium",
+    "date": "2026-08-10",
+    "category": "AI Development",
+    "tags": ["AI Agents", "Open Source", "Software Development"],
+    "url": "https://medium.com/@ar2701699/open-agent-studio-building-a-visual-platform-for-ai-agent-development-08148354ee8a",
+    "featured": true
+  },
+  {
+    "id": "pub-06",
+    "title": "NutriAI Pakistan: Building an AI-Powered Nutrition Experience for Pakistan",
+    "description": "An exploration of NutriAI Pakistan, an AI-powered nutrition platform designed around Pakistani food, dietary needs, and digital experiences.",
+    "platform": "Medium",
+    "date": "2026-07-15",
+    "category": "Artificial Intelligence",
+    "tags": ["AI", "Nutrition Technology", "Pakistan"],
+    "url": "https://medium.com/@ar2701699/nutriai-pakistan-building-an-ai-powered-nutrition-experience-for-pakistan-5edb1c7c2ab4",
+    "featured": false
+  },
+  {
+    "id": "pub-07",
+    "title": "HomeVista 3D: Reimagining Real Estate Through Interactive 3D Visualization",
+    "description": "An exploration of HomeVista 3D, an interactive real-estate visualization platform designed to make property discovery more immersive through 3D technology and modern UI.",
+    "platform": "Medium",
+    "date": "2026-07-02",
+    "category": "3D Web Development",
+    "tags": ["3D", "Real Estate", "Visualization"],
+    "url": "https://medium.com/@ar2701699/homevista-3d-reimagining-real-estate-through-interactive-3d-visualization-ac5e111f7927",
+    "featured": false
+  },
+  {
+    "id": "pub-08",
+    "title": "Finova AI — Your Wealth, Intelligently Managed",
+    "description": "An exploration of Finova AI, an intelligent wealth-management platform designed to provide a modern, data-driven financial experience.",
+    "platform": "Medium",
+    "date": "2026-06-30",
+    "category": "Artificial Intelligence",
+    "tags": ["AI", "FinTech", "Data"],
+    "url": "https://medium.com/@ar2701699/finova-ai-your-wealth-intelligently-managed-8d08563a743e",
+    "featured": false
+  }
+]
