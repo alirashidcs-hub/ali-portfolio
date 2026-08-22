@@ -1,6 +1,17 @@
 [
   {
-    "id": "pub-01",
+  "id": "pub-01",
+  "title": "AI Won’t Replace You — But Someone Using AI Might",
+  "description": "An exploration of how artificial intelligence is transforming careers, education, programming, and the future of work—and why the greatest advantage may belong to those who learn to combine AI with human intelligence.",
+  "platform": "Medium",
+  "date": "2026-08-22",
+  "category": "Artificial Intelligence",
+  "tags": ["AI", "Future of Work", "AI Careers", "AI Agents"],
+  "url": "https://medium.com/@ar2701699/ai-wont-replace-you-but-someone-using-ai-might-714aa45093d4",
+  "featured": true
+},
+  {
+    "id": "pub-02",
     "title": "Pictures Can Show Almost Anything. Can They Explain Everything?",
     "description": "An exploration of visual AI, its epistemological limitations, and how the human premium is reshaping traditional art and design.",
     "platform": "Medium",
@@ -11,7 +22,7 @@
     "featured": true
   },
   {
-    "id": "pub-02",
+    "id": "pub-03",
     "title": "CityVerse: Building an AI-Powered 3D Smart City Digital Twin",
     "description": "An interactive 3D Smart City Digital Twin combining AI, real-time simulation concepts, and immersive web technology.",
     "platform": "Medium",
@@ -22,7 +33,7 @@
     "featured": true
   },
   {
-    "id": "pub-03",
+    "id": "pub-04",
     "title": "FoodVerse 3D: Reimagining Food Exploration Through Interactive 3D Web Experiences",
     "description": "A detailed look at FoodVerse 3D, an immersive web experience combining interactive 3D food visualization, cinematic design, and modern web technologies.",
     "platform": "Medium",
@@ -33,7 +44,7 @@
     "featured": true
   },
   {
-    "id": "pub-04",
+    "id": "pub-05",
     "title": "Earth Explorer: Building an Interactive 3D Planet Experience for the Web",
     "description": "An exploration of Earth Explorer, an interactive 3D planet experience built with Three.js and modern web technologies.",
     "platform": "Medium",
@@ -44,7 +55,7 @@
     "featured": true
   },
   {
-    "id": "pub-05",
+    "id": "pub-06",
     "title": "Open Agent Studio: Building a Visual Platform for AI Agent Development",
     "description": "An exploration of Open Agent Studio, an open-source visual AI agent builder designed to make agent development more accessible.",
     "platform": "Medium",
@@ -55,7 +66,7 @@
     "featured": true
   },
   {
-    "id": "pub-06",
+    "id": "pub-07",
     "title": "NutriAI Pakistan: Building an AI-Powered Nutrition Experience for Pakistan",
     "description": "An exploration of NutriAI Pakistan, an AI-powered nutrition platform designed around Pakistani food, dietary needs, and digital experiences.",
     "platform": "Medium",
@@ -66,7 +77,7 @@
     "featured": false
   },
   {
-    "id": "pub-07",
+    "id": "pub-08",
     "title": "HomeVista 3D: Reimagining Real Estate Through Interactive 3D Visualization",
     "description": "An exploration of HomeVista 3D, an interactive real-estate visualization platform designed to make property discovery more immersive through 3D technology and modern UI.",
     "platform": "Medium",
@@ -77,7 +88,7 @@
     "featured": false
   },
   {
-    "id": "pub-08",
+    "id": "pub-09",
     "title": "Finova AI — Your Wealth, Intelligently Managed",
     "description": "An exploration of Finova AI, an intelligent wealth-management platform designed to provide a modern, data-driven financial experience.",
     "platform": "Medium",
