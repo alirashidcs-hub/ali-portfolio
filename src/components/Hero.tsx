@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react'
-import { profile, projects, certificates } from '../data'
+import { profile, projects, certificates, publications } from '../data'
 import { useTypewriter } from '../hooks/useTypewriter'
 import Counter from './ui/Counter'
 
-const FALLBACK_REPO_COUNT = 32
+const FALLBACK_REPO_COUNT = 17
 
 export default function Hero() {
   const typed = useTypewriter(profile.roles)
@@ -31,9 +31,27 @@ export default function Hero() {
   }, [socials.githubUsername])
 
   const stats = [
-    { label: 'Projects Shipped', value: projects.length },
-    { label: 'Certificates', value: certificates.length },
-    { label: 'GitHub Repositories', value: repoCount },
+    {
+      label: 'Projects Shipped',
+      value: projects.length,
+      href: '/projects',
+    },
+    {
+      label: 'Certificates',
+      value: certificates.length,
+      href: '/certificates',
+    },
+    {
+      label: 'GitHub Repositories',
+      value: repoCount,
+      href: socials.github,
+      external: true,
+    },
+    {
+      label: 'Publications',
+      value: publications.length,
+      href: '/publications',
+    },
   ]
 
   return (
@@ -73,7 +91,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-5 max-w-2xl mx-auto font-body text-base font-medium text-slate-300 sm:text-lg"
+          className="mx-auto mt-5 max-w-2xl font-body text-base font-medium text-slate-300 sm:text-lg"
         >
           AI &amp; Full-Stack Developer
         </motion.h2>
@@ -214,20 +232,48 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.15, duration: 0.6 }}
-          className="mx-auto mt-10 grid max-w-xl grid-cols-3 gap-4 sm:gap-8"
+          className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-8"
         >
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <p className="font-display text-3xl text-gradient sm:text-4xl">
-                <Counter to={s.value} />
-                <span>+</span>
-              </p>
+          {stats.map((s) => {
+            const content = (
+              <div className="text-center">
+                <p className="font-display text-3xl text-gradient sm:text-4xl">
+                  <Counter to={s.value} />
+                  <span>+</span>
+                </p>
 
-              <p className="mt-1 font-mono text-[10px] uppercase tracking-widest text-slate-500 sm:text-xs">
-                {s.label}
-              </p>
-            </div>
-          ))}
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-widest text-slate-500 sm:text-xs">
+                  {s.label}
+                </p>
+              </div>
+            )
+
+            if (s.external) {
+              return (
+                <a
+                  key={s.label}
+                  data-cursor-hover
+                  href={s.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl p-3 transition-transform hover:scale-105"
+                >
+                  {content}
+                </a>
+              )
+            }
+
+            return (
+              <Link
+                key={s.label}
+                data-cursor-hover
+                to={s.href}
+                className="rounded-2xl p-3 transition-transform hover:scale-105"
+              >
+                {content}
+              </Link>
+            )
+          })}
         </motion.div>
       </div>
 
