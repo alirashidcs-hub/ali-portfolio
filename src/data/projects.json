@@ -137,7 +137,7 @@
       "Node.js",
       "Machine Learning"
     ],
-    "featured": false,
+    "featured": true,
     "date": "2026-05-10",
     "status": "Completed",
     "images": [
@@ -181,7 +181,7 @@
       "TypeScript",
       "Node.js"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-02-14",
     "status": "Completed",
     "images": [
@@ -203,7 +203,7 @@
       "Three.js",
       "Google Drive API"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-06-20",
     "status": "Completed",
     "images": [
@@ -225,7 +225,7 @@
       "Node.js",
       "Prompt Engineering"
     ],
-    "featured": true,
+    "featured": false,
     "date": "2026-04-18",
     "status": "Completed",
     "images": [

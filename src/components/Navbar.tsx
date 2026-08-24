@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { NavLink, Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const sectionLinks = [
@@ -18,7 +18,7 @@ const sectionLinks = [
 const pageLinks = [
   { to: '/projects', label: 'All Projects' },
   { to: '/certificates', label: 'All Certificates' },
-  { to: '/publications', label: 'Publications' },
+  { to: '/publications', label: 'All Publications' },
 ]
 
 export default function Navbar() {
@@ -26,65 +26,88 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
+
+  const closeMenu = () => {
+    setOpen(false)
+  }
 
   return (
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className={`fixed top-0 inset-x-0 z-40 transition-all duration-300 ${
-        scrolled ? 'glass py-3' : 'py-5 bg-transparent'
+      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
+        scrolled
+          ? 'glass py-3'
+          : 'bg-transparent py-5'
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6">
-        <Link to="/" data-cursor-hover className="font-display text-sm tracking-[0.25em] text-slate-100">
+        {/* Logo */}
+        <Link
+          to="/"
+          data-cursor-hover
+          onClick={closeMenu}
+          className="font-display text-sm tracking-[0.25em] text-slate-100"
+        >
           AR<span className="text-sky-400">.</span>
         </Link>
 
-        <ul className="hidden gap-5 lg:flex">
-  {sectionLinks.map((l) => (
-    <li key={l.hash}>
-      <Link
-        data-cursor-hover
-        to={`/${l.hash}`}
-        className="font-mono text-xs uppercase tracking-widest text-slate-400 transition-colors hover:text-sky-300"
-      >
-        {l.label}
-      </Link>
-    </li>
-  ))}
+        {/* Desktop Navigation */}
+        <ul className="hidden items-center gap-5 lg:flex">
+          {sectionLinks.map((link) => (
+            <li key={link.hash}>
+              <Link
+                data-cursor-hover
+                to={`/${link.hash}`}
+                className="font-mono text-xs uppercase tracking-widest text-slate-400 transition-colors hover:text-sky-300"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
 
-  <li>
-    <NavLink
-      data-cursor-hover
-      to="/publications"
-      className={({ isActive }) =>
-        `font-mono text-xs uppercase tracking-widest transition-colors ${
-          isActive
-            ? 'text-sky-300'
-            : 'text-slate-400 hover:text-sky-300'
-        }`
-      }
-    >
-      Publications
-    </NavLink>
-  </li>
-</ul>
+          <li>
+            <NavLink
+              data-cursor-hover
+              to="/projects"
+              className={({ isActive }) =>
+                `font-mono text-xs uppercase tracking-widest transition-colors ${
+                  isActive
+                    ? 'text-sky-300'
+                    : 'text-slate-400 hover:text-sky-300'
+                }`
+              }
+            >
+              Projects
+            </NavLink>
+          </li>
+        </ul>
 
+        {/* Mobile Menu Button */}
         <button
+          type="button"
           data-cursor-hover
-          onClick={() => setOpen((o) => !o)}
+          onClick={() => setOpen((value) => !value)}
           className="text-slate-200 lg:hidden"
-          aria-label="Toggle menu"
+          aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={open}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </nav>
 
+      {/* Mobile Navigation */}
       {open && (
         <motion.div
           initial={{ height: 0, opacity: 0 }}
@@ -92,29 +115,33 @@ export default function Navbar() {
           exit={{ height: 0, opacity: 0 }}
           className="glass mt-3 flex flex-col gap-1 px-6 py-4 lg:hidden"
         >
-          {sectionLinks.map((l) => (
+          {sectionLinks.map((link) => (
             <Link
-              key={l.hash}
-              to={`/${l.hash}`}
-              onClick={() => setOpen(false)}
-              className="block py-2 font-mono text-xs uppercase tracking-widest text-slate-300"
+              key={link.hash}
+              to={`/${link.hash}`}
+              onClick={closeMenu}
+              className="block py-2 font-mono text-xs uppercase tracking-widest text-slate-300 transition-colors hover:text-sky-300"
             >
-              {l.label}
+              {link.label}
             </Link>
           ))}
+
           <div className="my-2 border-t border-slate-800" />
-          {pageLinks.map((l) => (
+
+          {pageLinks.map((link) => (
             <NavLink
-              key={l.to}
-              to={l.to}
-              onClick={() => setOpen(false)}
+              key={link.to}
+              to={link.to}
+              onClick={closeMenu}
               className={({ isActive }) =>
-                `block py-2 font-mono text-xs uppercase tracking-widest ${
-                  isActive ? 'text-sky-300' : 'text-violet-300'
+                `block py-2 font-mono text-xs uppercase tracking-widest transition-colors ${
+                  isActive
+                    ? 'text-sky-300'
+                    : 'text-violet-300 hover:text-sky-300'
                 }`
               }
             >
-              {l.label}
+              {link.label}
             </NavLink>
           ))}
         </motion.div>

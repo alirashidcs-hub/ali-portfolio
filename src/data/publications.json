@@ -41,7 +41,7 @@
     "category": "3D Web Development",
     "tags": ["Three.js", "3D Web", "Interactive Design"],
     "url": "https://medium.com/@ar2701699/foodverse-3d-reimagining-food-exploration-through-interactive-3d-web-experiences-cd7e8a4edd6e",
-    "featured": true
+    "featured": false
   },
   {
     "id": "pub-05",
@@ -52,7 +52,7 @@
     "category": "3D Web Development",
     "tags": ["Three.js", "3D", "Web Development"],
     "url": "https://medium.com/@ar2701699/earth-explorer-building-an-interactive-3d-planet-experience-for-the-web-c4f5760bd663",
-    "featured": true
+    "featured": false
   },
   {
     "id": "pub-06",
@@ -63,7 +63,7 @@
     "category": "AI Development",
     "tags": ["AI Agents", "Open Source", "Software Development"],
     "url": "https://medium.com/@ar2701699/open-agent-studio-building-a-visual-platform-for-ai-agent-development-08148354ee8a",
-    "featured": true
+    "featured": false
   },
   {
     "id": "pub-07",

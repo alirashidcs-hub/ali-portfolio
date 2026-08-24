@@ -8,18 +8,19 @@ import CustomCursor from './CustomCursor'
 
 export default function Layout() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <ScrollToTop />
       <ScrollProgress />
       <CustomCursor />
+
       <Navbar />
 
-      <main>
+      <main className="flex-1">
         <Outlet />
       </main>
 
       <Footer />
       <BackToTop />
-    </>
+    </div>
   )
 }

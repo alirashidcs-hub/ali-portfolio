@@ -18,7 +18,7 @@
   {
     "id": "c02",
     "title": "AI Fundamentals",
-    "featured": true,
+    "featured": false,
     "issuer": "Google",
     "issuerLogo": "",
     "category": "Google",
@@ -240,7 +240,7 @@
   {
     "id": "c16",
     "title": "Preparation for Job Interviews",
-    "featured": true,
+    "featured": false,
     "issuer": "Coursera",
     "issuerLogo": "",
     "category": "Career Development",
@@ -320,7 +320,7 @@
   {
     "id": "c21",
     "title": "Foundations of Project Management",
-    "featured": true,
+    "featured": false,
     "issuer": "Google",
     "issuerLogo": "",
     "category": "Project Management",
@@ -337,7 +337,7 @@
   {
     "id": "c22",
     "title": "Project Execution: Running the Project",
-    "featured": true,
+    "featured": false,
     "issuer": "Google",
     "issuerLogo": "",
     "category": "Project Management",
@@ -353,7 +353,7 @@
   {
     "id": "c23",
     "title": "Marketing Analytics Foundation",
-    "featured": true,
+    "featured": false,
     "issuer": "Meta",
     "issuerLogo": "",
     "category": "Marketing & Analytics",
