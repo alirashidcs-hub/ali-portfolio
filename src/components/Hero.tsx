@@ -93,7 +93,7 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="mx-auto mt-5 max-w-2xl font-body text-base font-medium text-slate-300 sm:text-lg"
         >
-          AI &amp; Full-Stack Developer
+          {profile.tagline}
         </motion.h2>
 
         {/* Professional Description */}
@@ -101,12 +101,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.58, duration: 0.6 }}
-          className="mx-auto mt-3 max-w-2xl font-body text-sm leading-7 text-slate-400 sm:text-base"
+          className="mx-auto mt-4 max-w-2xl font-body text-sm leading-7 text-slate-400 sm:text-base"
         >
-          Ali Rashid is a BS Computer Science student at the University of
-          Engineering and Technology (UET) Taxila, building AI-powered
-          applications, modern full-stack platforms, and interactive web
-          experiences.
+          Building intelligent products, AI agents, full-stack applications,
+          and interactive 3D web experiences.
         </motion.p>
 
         {/* Dynamic Professional Roles */}
@@ -136,7 +134,7 @@ export default function Hero() {
           <Link
             data-cursor-hover
             to="/projects"
-            className="rounded-full bg-gradient-to-r from-sky-400 via-violet-500 to-cyan-400 px-7 py-3 font-body text-sm font-medium text-slate-950 shadow-lg shadow-violet-950/50 transition-transform hover:scale-105"
+            className="rounded-full bg-gradient-to-r from-sky-400 via-violet-500 to-cyan-400 px-8 py-3.5 font-body text-sm font-semibold text-slate-950 shadow-lg shadow-violet-950/50 transition-all hover:scale-105 hover:shadow-xl"
           >
             View Projects
           </Link>
@@ -145,47 +143,17 @@ export default function Hero() {
             data-cursor-hover
             href={profile.resumeUrl}
             download
-            className="glass glow-border rounded-full px-7 py-3 font-body text-sm font-medium text-slate-200 transition-transform hover:scale-105"
+            className="glass glow-border rounded-full px-8 py-3.5 font-body text-sm font-medium text-slate-200 transition-all hover:scale-105"
           >
             Download Resume
           </a>
 
-          <Link
+          <a
             data-cursor-hover
-            to="/#contact"
-            className="rounded-full border border-slate-700 px-7 py-3 font-body text-sm font-medium text-slate-300 transition-colors hover:border-sky-400 hover:text-sky-300"
+            href="#contact"
+            className="rounded-full border border-slate-700 px-8 py-3.5 font-body text-sm font-medium text-slate-300 transition-all hover:border-sky-400 hover:text-sky-300"
           >
             Contact Me
-          </Link>
-        </motion.div>
-
-        {/* GitHub / LinkedIn Links */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0, duration: 0.6 }}
-          className="mt-4 flex flex-wrap items-center justify-center gap-4"
-        >
-          <a
-            data-cursor-hover
-            href={socials.github}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-sky-300"
-          >
-            <Github size={15} />
-            View GitHub
-          </a>
-
-          <a
-            data-cursor-hover
-            href={socials.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-sky-300"
-          >
-            <Linkedin size={15} />
-            Connect on LinkedIn
           </a>
         </motion.div>
 
@@ -193,8 +161,8 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.6 }}
-          className="mt-10 flex items-center justify-center gap-6"
+          transition={{ delay: 1.05, duration: 0.6 }}
+          className="mt-8 flex items-center justify-center gap-6"
         >
           {[
             {
