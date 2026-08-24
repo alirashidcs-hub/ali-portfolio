@@ -1,18 +1,16 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import {
-  Star,
-  GitFork,
   Github,
-  Pin,
   ArrowUpRight,
   Activity,
 } from 'lucide-react'
 import { profile } from '../data'
 import Counter from './ui/Counter'
 
+
+
 const GITHUB_USERNAME = profile.socials.githubUsername
-const PINNED_REPOS = profile.pinnedRepos ?? []
 
 type Repo = {
   id: number
@@ -24,45 +22,6 @@ type Repo = {
   language: string | null
   pushed_at?: string
 }
-
-const fallbackRepos: Repo[] = [
-  {
-    id: 1,
-    name: 'interview-ai',
-    description: 'AI mock-interview coach',
-    html_url: '#',
-    stargazers_count: 18,
-    forks_count: 4,
-    language: 'TypeScript',
-  },
-  {
-    id: 2,
-    name: 'homevista-3d',
-    description: '3D real-estate explorer',
-    html_url: '#',
-    stargazers_count: 24,
-    forks_count: 6,
-    language: 'JavaScript',
-  },
-  {
-    id: 3,
-    name: 'chrono-velosec',
-    description: 'CLI utility suite',
-    html_url: '#',
-    stargazers_count: 9,
-    forks_count: 2,
-    language: 'C++',
-  },
-  {
-    id: 4,
-    name: 'nutriai-pakistan',
-    description: 'Local-cuisine meal planner',
-    html_url: '#',
-    stargazers_count: 12,
-    forks_count: 3,
-    language: 'Python',
-  },
-]
 
 const fallbackLanguages = [
   { name: 'TypeScript', pct: 34 },
@@ -86,9 +45,6 @@ const activityLevels = [
 ]
 
 export default function GitHubStats() {
-  const [repos, setRepos] = useState<Repo[]>(fallbackRepos)
-  const [usingPinned, setUsingPinned] = useState(false)
-
   const [stats, setStats] = useState({
     repos: 32,
     stars: 140,
@@ -132,38 +88,6 @@ export default function GitHubStats() {
             0,
           ),
         })
-
-        if (PINNED_REPOS.length > 0) {
-          const pinnedResults = await Promise.all(
-            PINNED_REPOS.map((name) =>
-              fetch(
-                `https://api.github.com/repos/${GITHUB_USERNAME}/${name}`,
-              )
-                .then((response) =>
-                  response.ok ? response.json() : null,
-                )
-                .catch(() => null),
-            ),
-          )
-
-          const validPinned = pinnedResults.filter(Boolean) as Repo[]
-
-          if (validPinned.length > 0) {
-            setRepos(validPinned)
-            setUsingPinned(true)
-          }
-        } else {
-          const topByStars = [...repoData]
-            .sort(
-              (a, b) =>
-                b.stargazers_count - a.stargazers_count,
-            )
-            .slice(0, 4)
-
-          if (topByStars.length > 0) {
-            setRepos(topByStars)
-          }
-        }
 
         const languageCounts: Record<string, number> = {}
 
@@ -219,6 +143,7 @@ export default function GitHubStats() {
 
   function timeAgo(iso: string) {
     const diffMs = Date.now() - new Date(iso).getTime()
+
     const days = Math.floor(
       diffMs / (1000 * 60 * 60 * 24),
     )
@@ -293,6 +218,7 @@ export default function GitHubStats() {
         >
           <Github size={14} />
           Visit GitHub
+
           <ArrowUpRight
             size={14}
             className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -484,128 +410,7 @@ export default function GitHubStats() {
         </motion.div>
       </div>
 
-      {/* Repositories */}
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 24,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        viewport={{
-          once: true,
-          margin: '-60px',
-        }}
-        transition={{
-          duration: 0.6,
-        }}
-        className="mt-12"
-      >
-        <div className="mb-5 flex items-center justify-between">
-          <p className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-slate-500">
-            {usingPinned ? (
-              <>
-                <Pin
-                  size={13}
-                  className="text-violet-300"
-                />
-                Pinned Repositories
-              </>
-            ) : (
-              <>
-                <Github
-                  size={13}
-                  className="text-sky-300"
-                />
-                Featured Repositories
-              </>
-            )}
-          </p>
-
-          {loading && (
-            <span className="font-mono text-[10px] text-slate-600">
-              Syncing...
-            </span>
-          )}
-        </div>
-
-        <div className="grid gap-5 sm:grid-cols-2">
-          {repos.map((repo, index) => (
-            <motion.a
-              key={repo.id}
-              href={repo.html_url}
-              target="_blank"
-              rel="noreferrer"
-              data-cursor-hover
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-                margin: '-40px',
-              }}
-              transition={{
-                delay: index * 0.07,
-                duration: 0.5,
-              }}
-              whileHover={{
-                y: -5,
-              }}
-              className="glass glow-border group flex min-h-[170px] flex-col rounded-2xl p-6 transition-shadow duration-300 hover:shadow-xl hover:shadow-violet-950/20"
-            >
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex min-w-0 items-center gap-2 text-slate-200">
-                  <Github
-                    size={16}
-                    className="shrink-0 text-sky-300"
-                  />
-
-                  <span className="truncate font-mono text-sm">
-                    {repo.name}
-                  </span>
-                </div>
-
-                <ArrowUpRight
-                  size={15}
-                  className="shrink-0 text-slate-600 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-sky-300"
-                />
-              </div>
-
-              <p className="mt-4 line-clamp-2 text-sm leading-6 text-slate-500">
-                {repo.description ||
-                  'No description provided.'}
-              </p>
-
-              <div className="mt-auto flex flex-wrap items-center gap-4 pt-6 text-xs text-slate-500">
-                {repo.language && (
-                  <span className="text-cyan-300">
-                    {repo.language}
-                  </span>
-                )}
-
-                <span className="flex items-center gap-1">
-                  <Star size={12} />
-                  {repo.stargazers_count}
-                </span>
-
-                <span className="flex items-center gap-1">
-                  <GitFork size={12} />
-                  {repo.forks_count}
-                </span>
-              </div>
-            </motion.a>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Recent Activity */}
+      {/* Latest Repository Activity */}
       {recentActivity.length > 0 && (
         <motion.div
           initial={{
@@ -631,7 +436,7 @@ export default function GitHubStats() {
             </p>
 
             <span className="font-mono text-[10px] text-emerald-300/70">
-              LIVE DATA
+              {loading ? 'SYNCING' : 'LIVE DATA'}
             </span>
           </div>
 
