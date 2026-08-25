@@ -1,10 +1,10 @@
 [
- {
+  {
     "id": "open-agent-studio",
     "emoji": "🤖",
     "title": "Open Agent Studio",
-    "description": "An open-source visual AI agent builder for designing, testing, configuring, and deploying AI agents.",
-    "longDescription": "Open Agent Studio is a full-stack AI agent platform created by Ali Rashid for building and managing AI agents through a visual node-based workflow builder. It supports configurable AI models, real-time streaming execution, MCP tools, encrypted provider credentials, API key management, Redis-backed rate limiting, and secure agent deployment APIs.",
+    "description": "An open-source visual AI agent builder for designing, testing, configuring, and deploying intelligent AI agents.",
+    "longDescription": "Open Agent Studio is a full-stack visual AI agent platform created by Ali Rashid for building, configuring, testing, and deploying AI agents through a node-based workflow builder. It supports configurable AI models, real-time streaming execution, MCP tools, encrypted provider credentials, API key management, Redis-backed rate limiting, and secure agent deployment APIs. The project demonstrates practical experience in AI agents, full-stack development, workflow automation, and modern web application architecture.",
     "category": "AI & Agents",
     "tags": [
       "Next.js",
@@ -13,7 +13,8 @@
       "Prisma",
       "Redis",
       "MCP",
-      "AI Agents"
+      "AI Agents",
+      "Artificial Intelligence"
     ],
     "featured": true,
     "date": "2026-08-09",
@@ -25,44 +26,47 @@
     "liveUrl": "https://open-agent-studio.vercel.app/",
     "githubUrl": "https://github.com/alirashidcs-hub/open-agent-studio"
   },
- {
-  "id": "cityverse-3d",
-  "emoji": "🏙️",
-  "title": "CityVerse — AI-Powered 3D Smart City Digital Twin",
-  "description": "An interactive 3D smart city digital twin for visualizing, simulating, and managing urban infrastructure, traffic, energy, weather, and emergency scenarios.",
-  "longDescription": "CityVerse is an AI-powered 3D Smart City Digital Twin created by Ali Rashid for exploring and simulating a procedurally generated smart city in real time. It features eight interactive districts including Downtown, Residential, Commercial, Industrial, University, Airport, Hospital, and Shopping. The platform includes animated traffic, dynamic time-of-day lighting, realistic weather modes, energy-flow visualization, building energy states, simulation controls, construction and road-closure tools, and emergency simulations. Built with Three.js and WebGL, CityVerse transforms complex urban data into an immersive, interactive digital environment for smart-city visualization and decision-making.",
-  "category": "3D & Smart Cities",
-  "tags": [
-    "Three.js",
-    "WebGL",
-    "3D",
-    "Smart City",
-    "Digital Twin",
-    "AI",
-    "Simulation",
-    "Data Visualization"
-  ],
-  "featured": true,
-  "date": "2026-08-20",
-  "status": "Completed",
-  "images": [
-    "/assets/projects/cityverse-3d.png.jpeg"
-  ],
-  "demoVideoUrl": "",
-  "liveUrl": "https://cityverse-3d-smart-city.vercel.app/",
-  "githubUrl": "https://github.com/alirashidcs-hub/cityverse-3d-smart-city"
-},
+  {
+    "id": "cityverse-3d",
+    "emoji": "🏙️",
+    "title": "CityVerse — AI-Powered 3D Smart City Digital Twin",
+    "description": "An interactive AI-powered 3D smart city digital twin for visualizing and simulating urban infrastructure, traffic, energy, weather, and emergency scenarios.",
+    "longDescription": "CityVerse is an AI-powered 3D Smart City Digital Twin created by Ali Rashid for exploring and simulating a procedurally generated smart city in real time. It features eight interactive districts including Downtown, Residential, Commercial, Industrial, University, Airport, Hospital, and Shopping. The platform includes animated traffic, dynamic time-of-day lighting, realistic weather modes, energy-flow visualization, building energy states, simulation controls, construction and road-closure tools, and emergency simulations. Built with Three.js and WebGL, CityVerse transforms complex urban data into an immersive interactive digital environment for smart-city visualization, simulation, and decision-making.",
+    "category": "3D & Smart Cities",
+    "tags": [
+      "Three.js",
+      "WebGL",
+      "3D",
+      "Smart City",
+      "Digital Twin",
+      "AI",
+      "Simulation",
+      "Data Visualization"
+    ],
+    "featured": true,
+    "date": "2026-08-20",
+    "status": "Completed",
+    "images": [
+      "/assets/projects/cityverse-3d.png.jpeg"
+    ],
+    "demoVideoUrl": "",
+    "liveUrl": "https://cityverse-3d-smart-city.vercel.app/",
+    "githubUrl": "https://github.com/alirashidcs-hub/cityverse-3d-smart-city"
+  },
   {
     "id": "homevista-3d",
     "emoji": "🏡",
     "title": "HomeVista 3D",
-    "description": "AI-powered 3D real estate platform with an interactive master plan and immersive property visualization.",
-    "longDescription": "HomeVista 3D is an AI-powered 3D real estate platform developed by Ali Rashid. It features an interactive master plan, immersive property visualization, intelligent plot recommendations, real-time home customization, investment estimation, and Google Gemini AI integration.",
+    "description": "An AI-powered 3D real estate platform with interactive property visualization, master-plan exploration, and intelligent plot recommendations.",
+    "longDescription": "HomeVista 3D is an AI-powered 3D real estate platform developed by Ali Rashid. It features an interactive master plan, immersive property visualization, intelligent plot recommendations, real-time home customization, investment estimation, and Google Gemini AI integration. The project combines artificial intelligence, 3D web technology, and modern real estate visualization to create an engaging digital property exploration experience.",
     "category": "AI & 3D",
     "tags": [
       "React",
       "Three.js",
-      "Google Gemini API"
+      "Google Gemini API",
+      "Artificial Intelligence",
+      "3D Web",
+      "Real Estate"
     ],
     "featured": true,
     "date": "2026-07-15",
@@ -75,67 +79,73 @@
     "githubUrl": "https://github.com/alirashidcs-hub/HomeVista-3D"
   },
   {
-  "id": "earth-explorer",
-  "emoji": "🌍",
-  "title": "Earth Explorer",
-  "description": "An immersive interactive 3D Earth experience built with Next.js, TypeScript, Three.js, and Tailwind CSS.",
-  "longDescription": "Earth Explorer is an interactive 3D Earth experience that allows users to explore a realistic digital globe, rotate and zoom the planet, switch between day and night modes, explore countries and continents, search for locations, discover random destinations with Surprise Me, and enter fullscreen planetarium mode. The project also includes SEO-friendly country and continent pages, dynamic sitemap generation, robots.txt, structured metadata, and a responsive experience across desktop and mobile.",
-  "category": "3D & Interactive",
-  "tags": [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "Three.js",
-    "Tailwind CSS"
-  ],
-  "featured": true,
-  "date": "2026-07-18",
-  "status": "Completed",
-  "images": [
-    "/assets/projects/earth-explorer.svg.png"
-  ],
-  "demoVideoUrl": "",
-  "liveUrl": "https://earth-explorer-beta.vercel.app/",
-  "githubUrl": "https://github.com/alirashidcs-hub/earth-explorer"
-},
-{
-  "id": "foodverse-3d",
-  "emoji": "🍔",
-  "title": "FoodVerse 3D",
-  "description": "A luxury digital culinary gallery combining cinematic food photography, interactive 3D visualization, and futuristic web design.",
-  "longDescription": "FoodVerse 3D is an immersive digital culinary gallery featuring 16 curated food experiences, cinematic animations, interactive 3D visualization architecture, high-quality food photography, multiple lighting environments, responsive layouts, dynamic food categories, and individual food detail pages. The platform uses a photography-first approach while supporting genuine GLB models through an automatic asset detection system.",
-  "category": "3D & Interactive",
-  "tags": [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "Three.js",
-    "React Three Fiber",
-    "Drei",
-    "Tailwind CSS",
-    "Framer Motion"
-  ],
-  "featured": true,
-  "date": "2026-08-11",
-  "status": "Completed",
-  "images": [
-    "/assets/projects/foodverse-3d.svg.png"
-  ],
-  "demoVideoUrl": "",
-  "liveUrl": "https://foodverse-3d.vercel.app/",
-  "githubUrl": "https://github.com/alirashidcs-hub/FoodVerse-3D"
-},
+    "id": "earth-explorer",
+    "emoji": "🌍",
+    "title": "Earth Explorer",
+    "description": "An immersive interactive 3D Earth experience built with Next.js, TypeScript, Three.js, and Tailwind CSS.",
+    "longDescription": "Earth Explorer is an interactive 3D Earth experience created by Ali Rashid that allows users to explore a realistic digital globe, rotate and zoom the planet, switch between day and night modes, explore countries and continents, search for locations, discover random destinations with Surprise Me, and enter fullscreen planetarium mode. The project also includes SEO-friendly country and continent pages, dynamic sitemap generation, robots.txt, structured metadata, and a responsive experience across desktop and mobile devices.",
+    "category": "3D & Interactive",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Three.js",
+      "Tailwind CSS",
+      "3D Web",
+      "Interactive Globe"
+    ],
+    "featured": true,
+    "date": "2026-07-18",
+    "status": "Completed",
+    "images": [
+      "/assets/projects/earth-explorer.svg.png"
+    ],
+    "demoVideoUrl": "",
+    "liveUrl": "https://earth-explorer-beta.vercel.app/",
+    "githubUrl": "https://github.com/alirashidcs-hub/earth-explorer"
+  },
+  {
+    "id": "foodverse-3d",
+    "emoji": "🍽️",
+    "title": "FoodVerse 3D",
+    "description": "A luxury digital culinary gallery combining cinematic food photography, interactive 3D visualization, and futuristic web design.",
+    "longDescription": "FoodVerse 3D is an immersive digital culinary gallery featuring 16 curated food experiences, cinematic animations, interactive 3D visualization, high-quality food photography, multiple lighting environments, responsive layouts, dynamic food categories, and individual food detail pages. The platform uses a photography-first approach while supporting genuine GLB 3D models through an automatic asset detection system. The project demonstrates creative frontend development, 3D web experiences, visual storytelling, and modern interactive design.",
+    "category": "3D & Interactive",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Three.js",
+      "React Three Fiber",
+      "Drei",
+      "Tailwind CSS",
+      "Framer Motion",
+      "3D Web"
+    ],
+    "featured": true,
+    "date": "2026-08-11",
+    "status": "Completed",
+    "images": [
+      "/assets/projects/foodverse-3d.svg.png"
+    ],
+    "demoVideoUrl": "",
+    "liveUrl": "https://foodverse-3d.vercel.app/",
+    "githubUrl": "https://github.com/alirashidcs-hub/FoodVerse-3D"
+  },
   {
     "id": "nutriai-pakistan",
     "emoji": "🥗",
     "title": "NutriAI Pakistan",
-    "description": "AI-powered nutrition and health management platform built around local Pakistani cuisine.",
-    "longDescription": "NutriAI Pakistan is an AI-powered nutrition and health management platform designed around Pakistani cuisine. The project includes personalized meal planning, BMI and calorie calculations, nutrition analytics, grocery management, healthy recipes, AI nutrition assistance, and an integrated administration dashboard.",
+    "description": "An AI-powered nutrition and meal-planning platform designed around Pakistani cuisine and personalized health management.",
+    "longDescription": "NutriAI Pakistan is an AI-powered nutrition and health management platform designed around Pakistani cuisine. The project includes personalized meal planning, BMI and calorie calculations, nutrition analytics, grocery management, healthy recipes, AI nutrition assistance, and an integrated administration dashboard. It demonstrates the application of artificial intelligence and modern web development to create localized digital nutrition experiences.",
     "category": "AI",
     "tags": [
       "React",
       "Node.js",
-      "Machine Learning"
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Nutrition",
+      "Pakistan"
     ],
     "featured": true,
     "date": "2026-05-10",
@@ -151,13 +161,15 @@
     "id": "reelflow",
     "emoji": "🎥",
     "title": "ReelFlow",
-    "description": "A modern short-video social media platform with a mobile-first experience.",
-    "longDescription": "ReelFlow is a modern short-video social media platform featuring video sharing, authentication, user profiles, and a mobile-first user experience. The project demonstrates full-stack web development and modern application design.",
+    "description": "A modern short-video social media platform with video sharing, authentication, profiles, and a mobile-first user experience.",
+    "longDescription": "ReelFlow is a modern short-video social media platform featuring video sharing, authentication, user profiles, and a mobile-first user experience. The project demonstrates full-stack web development, responsive interface design, authentication workflows, and modern application architecture.",
     "category": "Web App",
     "tags": [
       "React",
       "TypeScript",
-      "Node.js"
+      "Node.js",
+      "Full-Stack Development",
+      "Social Media"
     ],
     "featured": false,
     "date": "2025-11-30",
@@ -169,17 +181,20 @@
     "liveUrl": "https://reel-flow-nine.vercel.app/",
     "githubUrl": "https://github.com/alirashidcs-hub/reel-flow-live"
   },
-   {
+  {
     "id": "finova-ai",
     "emoji": "💰",
     "title": "Finova AI",
-    "description": "AI-powered personal finance and wealth management platform.",
-    "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern responsive dashboard.",
+    "description": "An AI-powered personal finance and wealth management platform for expenses, budgets, savings, and intelligent financial insights.",
+    "longDescription": "Finova AI is an AI-powered personal finance and wealth management platform designed to help users track expenses, manage budgets, monitor savings goals, and gain intelligent financial insights through a modern responsive dashboard. The project demonstrates how artificial intelligence and full-stack web technologies can be applied to personal financial management.",
     "category": "AI",
     "tags": [
       "React",
       "TypeScript",
-      "Node.js"
+      "Node.js",
+      "Artificial Intelligence",
+      "FinTech",
+      "Personal Finance"
     ],
     "featured": false,
     "date": "2026-02-14",
@@ -195,13 +210,16 @@
     "id": "aura-atelier",
     "emoji": "👗",
     "title": "Aura Atelier",
-    "description": "AI-powered 3D virtual fitting room and haute couture styling platform.",
-    "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform developed as part of Ali Rashid's exploration of AI, 3D web technologies, and interactive digital experiences. It features a Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive styling experiences.",
+    "description": "An AI-powered 3D virtual fitting room and haute couture styling platform for immersive digital fashion experiences.",
+    "longDescription": "Aura Atelier is an AI-powered 3D virtual fitting room and haute couture styling platform developed by Ali Rashid as an exploration of artificial intelligence, 3D web technologies, and interactive digital fashion experiences. It features a Three.js fitting studio, AI fashion recommendations, digital wardrobe management, Google Drive cloud integration, and immersive styling experiences.",
     "category": "AI & 3D",
     "tags": [
       "React",
       "Three.js",
-      "Google Drive API"
+      "Google Drive API",
+      "Artificial Intelligence",
+      "Virtual Fitting Room",
+      "Fashion Technology"
     ],
     "featured": false,
     "date": "2026-06-20",
@@ -217,13 +235,16 @@
     "id": "interviewai",
     "emoji": "🎤",
     "title": "InterviewAI",
-    "description": "An AI-powered career readiness and interview coaching platform.",
-    "longDescription": "InterviewAI is an AI-powered career readiness and interview coaching platform developed to help students and professionals prepare for technical and behavioral interviews. It includes intelligent mock interviews, resume optimization, personalized feedback, and performance analytics.",
+    "description": "An AI-powered career readiness and interview coaching platform for technical and behavioral interview preparation.",
+    "longDescription": "InterviewAI is an AI-powered career readiness and interview coaching platform developed to help students and professionals prepare for technical and behavioral interviews. It includes intelligent mock interviews, resume optimization, personalized feedback, and performance analytics. The project demonstrates practical applications of artificial intelligence, prompt engineering, and modern web development for career preparation.",
     "category": "AI",
     "tags": [
       "React",
       "Node.js",
-      "Prompt Engineering"
+      "Prompt Engineering",
+      "Artificial Intelligence",
+      "Career Technology",
+      "Interview Preparation"
     ],
     "featured": false,
     "date": "2026-04-18",
@@ -239,13 +260,16 @@
     "id": "fitnova-ai",
     "emoji": "💪",
     "title": "FitNova AI",
-    "description": "AI-powered fitness and wellness platform with an intelligent coach and health analytics.",
-    "longDescription": "FitNova AI is an AI-powered fitness and wellness platform featuring an intelligent fitness coach, workout tracking, habit management, health analytics, and interactive dashboards. The project demonstrates Ali Rashid's interest in building AI-assisted applications and modern user experiences.",
+    "description": "An AI-powered fitness and wellness platform with an intelligent coach, workout tracking, habit management, and health analytics.",
+    "longDescription": "FitNova AI is an AI-powered fitness and wellness platform featuring an intelligent fitness coach, workout tracking, habit management, health analytics, and interactive dashboards. The project demonstrates Ali Rashid's interest in building AI-assisted applications, data-driven experiences, and modern responsive user interfaces.",
     "category": "AI",
     "tags": [
       "React",
       "Express.js",
-      "Machine Learning"
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Fitness Technology",
+      "Health Analytics"
     ],
     "featured": false,
     "date": "2026-03-22",
@@ -261,13 +285,16 @@
     "id": "studyflow-ai",
     "emoji": "📚",
     "title": "StudyFlow AI",
-    "description": "AI-powered study companion with note summarization, tutoring, and quiz generation.",
-    "longDescription": "StudyFlow AI is an AI-powered study companion designed for students. It provides smart note summarization, AI tutoring, quiz generation, and productivity features to support learning and study organization.",
+    "description": "An AI-powered study companion with note summarization, intelligent tutoring, quiz generation, and productivity features.",
+    "longDescription": "StudyFlow AI is an AI-powered study companion designed for students. It provides smart note summarization, AI tutoring, quiz generation, and productivity features to support learning and study organization. The project demonstrates practical applications of artificial intelligence and prompt engineering for personalized educational technology.",
     "category": "AI",
     "tags": [
       "React",
       "Prompt Engineering",
-      "Tailwind CSS"
+      "Tailwind CSS",
+      "Artificial Intelligence",
+      "EdTech",
+      "AI Tutoring"
     ],
     "featured": false,
     "date": "2026-01-08",
@@ -283,12 +310,15 @@
     "id": "chrono-velosec",
     "emoji": "🛠️",
     "title": "Chrono VeloSec Utility Suite",
-    "description": "A C++ productivity toolkit demonstrating modern C++ programming concepts.",
-    "longDescription": "Chrono VeloSec Utility Suite is a C++ productivity toolkit created to demonstrate modern C++ programming concepts, software design, problem solving, and practical utility development.",
+    "description": "A C++ productivity toolkit demonstrating modern C++ programming, software design, problem solving, and practical utility development.",
+    "longDescription": "Chrono VeloSec Utility Suite is a C++ productivity toolkit created to demonstrate modern C++ programming concepts, software design, problem solving, algorithms, and practical utility development. The project highlights foundational software engineering skills and hands-on experience with C++ development.",
     "category": "Systems & Tools",
     "tags": [
       "C++",
-      "Git"
+      "Git",
+      "Software Engineering",
+      "Algorithms",
+      "Programming"
     ],
     "featured": false,
     "date": "2025-09-05",
@@ -304,12 +334,15 @@
     "id": "arcana-console",
     "emoji": "🎮",
     "title": "Arcana Console Game Suite",
-    "description": "A collection of console-based games built in C++ showcasing OOP and game logic.",
-    "longDescription": "Arcana Console Game Suite is a collection of console-based games developed in C++, showcasing object-oriented programming, game logic, algorithms, and problem-solving skills.",
+    "description": "A collection of console-based games built in C++ showcasing object-oriented programming, algorithms, game logic, and problem-solving.",
+    "longDescription": "Arcana Console Game Suite is a collection of console-based games developed in C++, showcasing object-oriented programming, game logic, algorithms, data structures, and problem-solving skills. The project demonstrates foundational programming concepts through practical game development and interactive command-line applications.",
     "category": "Systems & Tools",
     "tags": [
       "C++",
-      "Git"
+      "Git",
+      "Object-Oriented Programming",
+      "Algorithms",
+      "Game Development"
     ],
     "featured": false,
     "date": "2025-07-12",
