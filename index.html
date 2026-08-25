@@ -1,48 +1,85 @@
+```html
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/favicon.svg"
+    />
 
+    <!-- ============================= -->
     <!-- Primary SEO -->
-    <title>Ali Rashid | AI & Full-Stack Developer | UET Taxila</title>
+    <!-- ============================= -->
+
+    <title>
+      Ali Rashid | AI & Full-Stack Developer | UET Taxila
+    </title>
 
     <meta
       name="description"
-      content="Ali Rashid is a BS Computer Science student at UET Taxila, Pakistan, and an AI & Full-Stack Developer building AI agents, intelligent web applications, and interactive 3D web experiences with React, TypeScript, Node.js, Python, and Three.js."
+      content="Ali Rashid is a BS Computer Science student at UET Taxila, Pakistan, and an AI & Full-Stack Developer building AI agents, intelligent web applications, and interactive 3D web experiences."
     />
 
-    <meta name="author" content="Ali Rashid" />
+    <meta
+      name="author"
+      content="Ali Rashid"
+    />
 
     <meta
       name="keywords"
       content="Ali Rashid, Ali Rashid UET Taxila, Ali Rashid UET, Ali Rashid Computer Science, Ali Rashid AI Developer, Ali Rashid Full Stack Developer, Ali Rashid Pakistan, UET Taxila Computer Science, AI Developer Pakistan, AI Agents, Full-Stack Developer, React Developer, TypeScript Developer, Next.js Developer, Node.js Developer, Three.js Developer, 3D Web Applications, Artificial Intelligence, Machine Learning"
     />
 
-    <meta name="robots" content="index, follow" />
+    <!-- Search Engine Crawling -->
+
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
     <meta
       name="googlebot"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
     <!-- Google Search Console Verification -->
+
     <meta
       name="google-site-verification"
       content="P24gT5UG67vq-XixxjMs2cqVyQNK-olhD_tOwBt1E64"
     />
 
-    <!-- Canonical URL -->
+    <!-- Canonical -->
+
     <link
       rel="canonical"
       href="https://ali-rashid-portfolio.vercel.app/"
     />
 
-    <meta name="theme-color" content="#050816" />
+    <!-- Theme -->
 
+    <meta
+      name="theme-color"
+      content="#050816"
+    />
+
+    <!-- ============================= -->
     <!-- Open Graph -->
+    <!-- ============================= -->
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
     <meta
       property="og:title"
       content="Ali Rashid | AI & Full-Stack Developer | UET Taxila"
@@ -50,10 +87,8 @@
 
     <meta
       property="og:description"
-      content="Official portfolio of Ali Rashid — BS Computer Science student at UET Taxila, Pakistan, focused on AI, AI agents, Full-Stack Development, and 3D Web Applications."
+      content="Official portfolio of Ali Rashid — BS Computer Science student at UET Taxila, Pakistan, focused on Artificial Intelligence, AI Agents, Full-Stack Development, and interactive 3D web experiences."
     />
-
-    <meta property="og:type" content="website" />
 
     <meta
       property="og:url"
@@ -66,11 +101,28 @@
     />
 
     <meta
+      property="og:locale"
+      content="en_US"
+    />
+
+    <!--
+      Replace this with a dedicated 1200x630 PNG/JPG
+      when you create one for social sharing.
+    -->
+    <meta
       property="og:image"
       content="https://ali-rashid-portfolio.vercel.app/assets/favicon.svg"
     />
 
+    <meta
+      property="og:image:alt"
+      content="Ali Rashid — AI & Full-Stack Developer"
+    />
+
+    <!-- ============================= -->
     <!-- Twitter / X -->
+    <!-- ============================= -->
+
     <meta
       name="twitter:card"
       content="summary"
@@ -83,7 +135,7 @@
 
     <meta
       name="twitter:description"
-      content="Portfolio of Ali Rashid — BS Computer Science student at UET Taxila, Pakistan, focused on AI, AI agents, Full-Stack Development, and 3D Web Applications."
+      content="Portfolio of Ali Rashid — BS Computer Science student at UET Taxila, Pakistan, focused on AI, AI Agents, Full-Stack Development, and 3D Web Applications."
     />
 
     <meta
@@ -91,32 +143,41 @@
       content="https://ali-rashid-portfolio.vercel.app/assets/favicon.svg"
     />
 
+    <meta
+      name="twitter:image:alt"
+      content="Ali Rashid — AI & Full-Stack Developer"
+    />
+
+    <!-- ============================= -->
     <!-- Person Structured Data -->
+    <!-- ============================= -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "@id": "https://ali-rashid-portfolio.vercel.app/#person",
-
         "name": "Ali Rashid",
-
         "url": "https://ali-rashid-portfolio.vercel.app/",
-
+        "image": "https://ali-rashid-portfolio.vercel.app/assets/favicon.svg",
         "jobTitle": "AI & Full-Stack Developer",
-
-        "description": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology, Taxila, Pakistan, focused on Artificial Intelligence, AI Agents, Full-Stack Development, and 3D Web Applications.",
-
+        "description": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology, Taxila, Pakistan, focused on Artificial Intelligence, AI Agents, Full-Stack Development, and interactive 3D web applications.",
+        "email": "mailto:ar2701699@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Taxila",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        },
         "affiliation": {
           "@type": "CollegeOrUniversity",
           "name": "University of Engineering and Technology, Taxila",
           "url": "https://www.uettaxila.edu.pk/"
         },
-
         "sameAs": [
           "https://www.linkedin.com/in/ali-rashid-cs/",
           "https://github.com/alirashidcs-hub"
         ],
-
         "knowsAbout": [
           "Artificial Intelligence",
           "AI Agents",
@@ -131,13 +192,39 @@
           "C++",
           "JavaScript",
           "PostgreSQL",
-          "3D Web Applications"
+          "3D Web Applications",
+          "WebGL"
         ]
       }
     </script>
 
+    <!-- ============================= -->
+    <!-- Website Structured Data -->
+    <!-- ============================= -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://ali-rashid-portfolio.vercel.app/#website",
+        "name": "Ali Rashid Portfolio",
+        "url": "https://ali-rashid-portfolio.vercel.app/",
+        "description": "Official portfolio of Ali Rashid, an AI and Full-Stack Developer and BS Computer Science student at UET Taxila.",
+        "publisher": {
+          "@id": "https://ali-rashid-portfolio.vercel.app/#person"
+        },
+        "inLanguage": "en"
+      }
+    </script>
+
+    <!-- ============================= -->
     <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- ============================= -->
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
 
     <link
       rel="preconnect"
@@ -145,29 +232,6 @@
       crossorigin
     />
 
-    <!-- GitHub Pages SPA fallback -->
-    <script>
-      (function (l) {
-        var params = new URLSearchParams(l.search);
-        var p = params.get("p");
-
-        if (p) {
-          var q = params.get("q");
-
-          p = p.replace(/~and~/g, "&");
-          q = q ? q.replace(/~and~/g, "&") : "";
-
-          window.history.replaceState(
-            null,
-            "",
-            l.pathname.slice(0, -1) +
-              p +
-              (q ? "?" + q : "") +
-              l.hash
-          );
-        }
-      })(window.location);
-    </script>
   </head>
 
   <body>
@@ -179,3 +243,4 @@
     ></script>
   </body>
 </html>
+```
