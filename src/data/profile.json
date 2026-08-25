@@ -2,9 +2,9 @@
   "name": "Ali Rashid",
   "degree": "BS Computer Science",
   "university": "University of Engineering and Technology (UET) Taxila",
-  "tagline": "AI & Full-Stack Developer | AI Agents & 3D Web",
-  "careerGoal": "To become a Software Engineer specializing in Artificial Intelligence, Full-Stack Development, and modern software engineering while building impactful AI-powered products and contributing to open-source projects.",
-  "bio": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology (UET) Taxila focused on Artificial Intelligence, AI agents, Full-Stack Development, and interactive 3D web experiences. He builds intelligent applications, modern digital products, and immersive web experiences using technologies such as React, TypeScript, Next.js, Node.js, Three.js, Python, and C++.",
+  "tagline": "AI & Full-Stack Developer | AI Agents, 3D Web & Software Engineering",
+  "careerGoal": "To become a Software Engineer specializing in Artificial Intelligence, AI Agents, Full-Stack Development, and 3D Web technologies while building impactful AI-powered products and contributing to open-source projects.",
+  "bio": "Ali Rashid is a BS Computer Science student at the University of Engineering and Technology (UET) Taxila, Pakistan, specializing in Artificial Intelligence, AI Agents, Full-Stack Development, and interactive 3D web experiences. He builds AI-powered applications, intelligent software products, AI agents, and immersive web experiences using React, TypeScript, Next.js, Node.js, Three.js, Python, and C++.",
   "coursework": [
     "Data Structures & Algorithms",
     "Object-Oriented Programming",
@@ -17,7 +17,7 @@
   ],
   "roles": [
     "AI Developer",
-    "AI Agent Builder",
+    "AI Agent Developer",
     "Full-Stack Developer",
     "3D Web Developer",
     "Software Engineer"
