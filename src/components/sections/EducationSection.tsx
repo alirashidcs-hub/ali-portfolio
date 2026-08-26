@@ -233,7 +233,7 @@ export default function EducationSection() {
                   />
 
                   <span className="font-mono text-[9px] uppercase tracking-widest text-slate-400 sm:text-[10px]">
-                    2023 — Present
+                    2025 — Present
                   </span>
                 </motion.div>
               </div>
