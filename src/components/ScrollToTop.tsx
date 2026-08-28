@@ -1,19 +1,12 @@
-import { motion, useScroll, useSpring } from 'framer-motion'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
-export default function ScrollProgress() {
-  const { scrollYProgress } = useScroll()
+export default function ScrollToTop() {
+  const { pathname } = useLocation()
 
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 120,
-    damping: 24,
-    restDelta: 0.001,
-  })
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
-  return (
-    <motion.div
-      aria-hidden="true"
-      style={{ scaleX }}
-      className="fixed inset-x-0 top-0 z-[100] h-[2px] origin-left bg-gradient-to-r from-sky-400 via-violet-500 to-cyan-400 sm:h-[2px]"
-    />
-  )
+  return null
 }

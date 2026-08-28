@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import ScrollToTop from './components/ScrollToTop'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import ProjectsPage from './pages/ProjectsPage'
@@ -11,6 +11,7 @@ import PageLoaderSection from './components/sections/PageLoaderSection'
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <PageLoaderSection />
 
       <Routes>
