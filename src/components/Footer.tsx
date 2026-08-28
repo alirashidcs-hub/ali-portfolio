@@ -30,17 +30,47 @@ const focusAreas = [
 export default function Footer() {
   const navigate = useNavigate()
 
+  /*
+   * Handles links such as:
+   * /#about
+   * /#skills
+   * /#leadership
+   * /#resume
+   * /#contact
+   */
   const handleSectionLink = (to: string) => {
     const id = to.replace('/#', '')
 
+    // Already on homepage
     if (window.location.pathname === '/') {
-      document.getElementById(id)?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
-    } else {
-      navigate(to)
+      const element = document.getElementById(id)
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        })
+      }
+
+      // Keep URL clean
+      window.history.replaceState(null, '', `/#${id}`)
+      return
     }
+
+    // Navigate to homepage first
+    navigate(`/#${id}`)
+
+    // Give React Router time to render Home
+    window.setTimeout(() => {
+      const element = document.getElementById(id)
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        })
+      }
+    }, 150)
   }
 
   const socialLinks = [
@@ -62,30 +92,60 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative overflow-hidden border-t border-slate-800/80 bg-slate-950 px-6 pb-6 pt-16">
-      {/* Ambient background */}
+    <footer className="relative overflow-hidden border-t border-slate-800/80 bg-slate-950 px-4 pb-6 pt-16 sm:px-6 sm:pt-20">
+      {/* =========================================================
+          AMBIENT BACKGROUND
+          ========================================================= */}
+
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden"
       >
-        <div className="absolute left-[15%] top-0 h-72 w-72 rounded-full bg-sky-500/[0.04] blur-3xl" />
-        <div className="absolute right-[15%] top-20 h-72 w-72 rounded-full bg-violet-500/[0.04] blur-3xl" />
+        {/* Left glow */}
+        <div className="absolute left-[10%] top-0 h-72 w-72 rounded-full bg-sky-500/[0.04] blur-3xl" />
 
+        {/* Right glow */}
+        <div className="absolute right-[10%] top-20 h-72 w-72 rounded-full bg-violet-500/[0.04] blur-3xl" />
+
+        {/* Center glow */}
+        <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/[0.02] blur-3xl" />
+
+        {/* Top line */}
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-400/30 to-transparent" />
       </div>
 
+      {/* =========================================================
+          MAIN CONTAINER
+          ========================================================= */}
+
       <div className="relative mx-auto max-w-6xl">
 
-        {/* CTA */}
-        <div className="group relative mb-14 overflow-hidden rounded-3xl border border-slate-800/80 bg-slate-900/40 p-7 backdrop-blur-xl sm:p-9">
+        {/* =======================================================
+            CTA
+            ======================================================= */}
+
+        <div className="group relative mb-14 overflow-hidden rounded-3xl border border-slate-800/80 bg-slate-900/40 p-6 backdrop-blur-xl sm:p-9">
+
+          {/* CTA glow */}
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -right-24 -top-24 h-56 w-56 rounded-full bg-sky-400/[0.06] blur-3xl transition-all duration-700 group-hover:bg-sky-400/[0.10]"
           />
 
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-24 -left-24 h-48 w-48 rounded-full bg-violet-500/[0.05] blur-3xl"
+          />
+
+          {/* CTA top accent */}
+          <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-400/50 to-transparent opacity-70" />
+
           <div className="relative flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
+
+            {/* CTA content */}
             <div>
               <div className="mb-4 flex items-center gap-2">
+
                 <span className="flex h-7 w-7 items-center justify-center rounded-full border border-sky-400/20 bg-sky-400/10">
                   <Sparkles
                     size={13}
@@ -109,33 +169,37 @@ export default function Footer() {
               </p>
             </div>
 
-            <Link
-              to="/#contact"
+            {/* CTA button */}
+            <button
+              type="button"
               data-cursor-hover
-              onClick={(event) => {
-                if (window.location.pathname === '/') {
-                  event.preventDefault()
-                  handleSectionLink('/#contact')
-                }
-              }}
-              className="group/button inline-flex shrink-0 items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-5 py-3 text-sm font-medium text-sky-200 transition-all duration-300 hover:border-sky-300/40 hover:bg-sky-400/15 hover:text-sky-100"
+              onClick={() => handleSectionLink('/#contact')}
+              className="group/button inline-flex shrink-0 items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-5 py-3 text-sm font-medium text-sky-200 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-300/40 hover:bg-sky-400/15 hover:text-sky-100"
             >
-              Get in touch
+              <span>Get in touch</span>
 
               <ArrowUpRight
                 size={15}
                 aria-hidden="true"
                 className="transition-transform duration-300 group-hover/button:-translate-y-0.5 group-hover/button:translate-x-0.5"
               />
-            </Link>
+            </button>
           </div>
         </div>
 
-        {/* Main Footer */}
+        {/* =======================================================
+            MAIN FOOTER GRID
+            ======================================================= */}
+
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
 
-          {/* Brand */}
+          {/* =====================================================
+              BRAND
+              ===================================================== */}
+
           <div>
+
+            {/* Logo */}
             <Link
               to="/"
               aria-label="Ali Rashid home"
@@ -146,6 +210,7 @@ export default function Footer() {
               </span>
             </Link>
 
+            {/* Description */}
             <p className="mt-5 max-w-sm text-sm leading-7 text-slate-500">
               {profile.degree} at {profile.university}.{' '}
               {profile.tagline}.
@@ -158,7 +223,8 @@ export default function Footer() {
                 aria-hidden="true"
               >
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-50" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.7)]" />
               </span>
 
               <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-slate-500">
@@ -198,8 +264,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* =====================================================
+              NAVIGATION
+              ===================================================== */}
+
           <div>
+
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">
               Navigation
             </p>
@@ -207,11 +277,14 @@ export default function Footer() {
             <ul className="mt-5 grid grid-cols-2 gap-x-7 gap-y-3">
               {quickLinks.map((link) => (
                 <li key={link.to}>
+
                   {link.to.startsWith('/#') ? (
                     <button
                       type="button"
                       data-cursor-hover
-                      onClick={() => handleSectionLink(link.to)}
+                      onClick={() =>
+                        handleSectionLink(link.to)
+                      }
                       className="group/link inline-flex items-center gap-1.5 text-left text-sm text-slate-500 transition-colors duration-300 hover:text-sky-300"
                     >
                       <span>{link.label}</span>
@@ -237,13 +310,18 @@ export default function Footer() {
                       />
                     </Link>
                   )}
+
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Focus */}
+          {/* =====================================================
+              FOCUS
+              ===================================================== */}
+
           <div>
+
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">
               Focus
             </p>
@@ -259,19 +337,24 @@ export default function Footer() {
                     className="h-1 w-1 rounded-full bg-sky-400/60 transition-all duration-300 group-hover/focus:h-1.5 group-hover/focus:w-1.5 group-hover/focus:bg-sky-300"
                   />
 
-                  {item}
+                  <span>{item}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-10 border-t border-slate-800/80 pt-5">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        {/* =======================================================
+            BOTTOM BAR
+            ======================================================= */}
 
-            {/* Copyright + Credit */}
+        <div className="mt-10 border-t border-slate-800/80 pt-5">
+
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+
+            {/* Copyright */}
             <div className="flex flex-col gap-1">
+
               <p className="font-mono text-[11px] text-slate-600">
                 © {new Date().getFullYear()} {profile.name}. All rights reserved.
               </p>
@@ -286,6 +369,7 @@ export default function Footer() {
                 </span>{' '}
                 by {profile.name}
               </p>
+
             </div>
 
             {/* Back To Top */}
@@ -315,6 +399,21 @@ export default function Footer() {
 
           </div>
         </div>
+
+        {/* =======================================================
+            FINAL DECORATIVE LINE
+            ======================================================= */}
+
+        <div className="mt-8 flex items-center justify-center gap-3">
+
+          <div className="h-px w-16 bg-gradient-to-r from-transparent to-sky-400/20" />
+
+          <span className="h-1 w-1 rounded-full bg-sky-400/40" />
+
+          <div className="h-px w-16 bg-gradient-to-l from-transparent to-violet-400/20" />
+
+        </div>
+
       </div>
     </footer>
   )
