@@ -6,7 +6,13 @@ import {
   useTransform,
 } from 'framer-motion'
 import { useRef } from 'react'
-import { ArrowUpRight, Brain, Code2, GraduationCap, Layers3 } from 'lucide-react'
+import {
+  ArrowUpRight,
+  Brain,
+  Code2,
+  GraduationCap,
+  Layers3,
+} from 'lucide-react'
 import { profile } from '../../data'
 import SectionHeading from '../ui/SectionHeading'
 
@@ -130,7 +136,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
+      className="relative overflow-hidden bg-[#FFF7F9] px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
     >
       {/* =========================================================
           BACKGROUND
@@ -141,7 +147,7 @@ export default function AboutSection() {
         className="pointer-events-none absolute inset-0 -z-20 opacity-[0.025]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(148,163,184,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.5) 1px, transparent 1px)',
+            'linear-gradient(rgba(183,110,121,0.45) 1px, transparent 1px), linear-gradient(90deg, rgba(183,110,121,0.45) 1px, transparent 1px)',
           backgroundSize:
             'clamp(32px, 4vw, 48px) clamp(32px, 4vw, 48px)',
         }}
@@ -151,21 +157,21 @@ export default function AboutSection() {
         aria-hidden="true"
         animate={{
           scale: [1, 1.08, 1],
-          opacity: [0.1, 0.18, 0.1],
+          opacity: [0.08, 0.15, 0.08],
         }}
         transition={{
           duration: 9,
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        className="pointer-events-none absolute left-[5%] top-32 -z-10 h-56 w-56 rounded-full bg-sky-500/[0.05] blur-3xl sm:h-72 sm:w-72"
+        className="pointer-events-none absolute left-[5%] top-32 -z-10 h-56 w-56 rounded-full bg-[#D99AA5]/[0.08] blur-3xl sm:h-72 sm:w-72"
       />
 
       <motion.div
         aria-hidden="true"
         animate={{
           scale: [1, 1.1, 1],
-          opacity: [0.08, 0.16, 0.08],
+          opacity: [0.06, 0.13, 0.06],
         }}
         transition={{
           duration: 11,
@@ -173,7 +179,7 @@ export default function AboutSection() {
           ease: 'easeInOut',
           delay: 1,
         }}
-        className="pointer-events-none absolute bottom-24 right-[5%] -z-10 h-64 w-64 rounded-full bg-violet-500/[0.05] blur-3xl sm:h-80 sm:w-80"
+        className="pointer-events-none absolute bottom-24 right-[5%] -z-10 h-64 w-64 rounded-full bg-[#B76E79]/[0.07] blur-3xl sm:h-80 sm:w-80"
       />
 
       {/* =========================================================
@@ -230,14 +236,14 @@ export default function AboutSection() {
             <motion.div
               animate={{
                 scale: [1, 1.06, 1],
-                opacity: [0.18, 0.32, 0.18],
+                opacity: [0.14, 0.25, 0.14],
               }}
               transition={{
                 duration: 6,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/10 blur-[80px] sm:h-80 sm:w-80"
+              className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#D99AA5]/[0.12] blur-[80px] sm:h-80 sm:w-80"
             />
 
             {/* Orbit */}
@@ -251,9 +257,9 @@ export default function AboutSection() {
                 repeat: Infinity,
                 ease: 'linear',
               }}
-              className="pointer-events-none absolute left-1/2 top-1/2 h-[290px] w-[290px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-300/[0.07] sm:h-[350px] sm:w-[350px]"
+              className="pointer-events-none absolute left-1/2 top-1/2 h-[290px] w-[290px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#B76E79]/[0.10] sm:h-[350px] sm:w-[350px]"
             >
-              <span className="absolute left-1/2 top-[-3px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-cyan-300 shadow-[0_0_12px_3px_rgba(103,232,249,0.65)]" />
+              <span className="absolute left-1/2 top-[-3px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[#B76E79] shadow-[0_0_12px_3px_rgba(183,110,121,0.35)]" />
             </motion.div>
 
             <motion.div
@@ -265,7 +271,7 @@ export default function AboutSection() {
                 repeat: Infinity,
                 ease: 'linear',
               }}
-              className="pointer-events-none absolute left-1/2 top-1/2 h-[325px] w-[325px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-400/[0.055] sm:h-[390px] sm:w-[390px]"
+              className="pointer-events-none absolute left-1/2 top-1/2 h-[325px] w-[325px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#D99AA5]/[0.08] sm:h-[390px] sm:w-[390px]"
             />
 
             {/* Profile card */}
@@ -288,9 +294,9 @@ export default function AboutSection() {
               }}
               className="absolute left-1/2 top-1/2 z-20 w-[78%] -translate-x-1/2 -translate-y-1/2 sm:w-[76%]"
             >
-              <div className="relative rounded-[2rem] border border-white/[0.08] bg-slate-950/65 p-2 shadow-[0_30px_80px_rgba(0,0,0,0.5)] backdrop-blur-xl sm:p-3">
+              <div className="relative rounded-[2rem] border border-[#D8B8BE]/60 bg-white/75 p-2 shadow-[0_30px_80px_rgba(94,62,69,0.14)] backdrop-blur-xl sm:p-3">
 
-                <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-white/[0.07] via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-0 rounded-[2rem] bg-gradient-to-br from-white/70 via-transparent to-[#FBECEF]/40" />
 
                 <div className="relative overflow-hidden rounded-[1.5rem]">
                   <img
@@ -299,7 +305,7 @@ export default function AboutSection() {
                     className="aspect-square w-full object-cover grayscale-[8%]"
                   />
 
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/10" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#2A2527]/75 via-transparent to-[#2A2527]/5" />
 
                   <motion.div
                     animate={{
@@ -311,11 +317,11 @@ export default function AboutSection() {
                       ease: 'linear',
                       repeatDelay: 3,
                     }}
-                    className="pointer-events-none absolute left-0 right-0 top-0 h-16 bg-gradient-to-b from-transparent via-cyan-300/[0.05] to-transparent"
+                    className="pointer-events-none absolute left-0 right-0 top-0 h-16 bg-gradient-to-b from-transparent via-[#F6DDE2]/[0.14] to-transparent"
                   />
 
                   <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5">
-                    <p className="font-mono text-[8px] uppercase tracking-[0.2em] text-cyan-300/80 sm:text-[9px]">
+                    <p className="font-mono text-[8px] uppercase tracking-[0.2em] text-[#F2C6CE] sm:text-[9px]">
                       Current Focus
                     </p>
 
@@ -326,12 +332,12 @@ export default function AboutSection() {
                 </div>
 
                 <div className="flex items-center justify-between px-2 pb-1 pt-3 sm:px-3">
-                  <span className="font-mono text-[8px] uppercase tracking-[0.15em] text-slate-600 sm:text-[9px]">
+                  <span className="font-mono text-[8px] uppercase tracking-[0.15em] text-[#9B8E91] sm:text-[9px]">
                     AI / FULL-STACK / 3D
                   </span>
 
-                  <span className="flex items-center gap-1.5 font-mono text-[8px] text-emerald-400/70 sm:text-[9px]">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.7)]" />
+                  <span className="flex items-center gap-1.5 font-mono text-[8px] text-[#A35F6A] sm:text-[9px]">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#B76E79] shadow-[0_0_8px_rgba(183,110,121,0.4)]" />
                     ONLINE
                   </span>
                 </div>
@@ -349,12 +355,12 @@ export default function AboutSection() {
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="glass absolute right-0 top-5 z-30 rounded-2xl border border-cyan-400/15 px-3 py-2.5 shadow-xl shadow-cyan-500/5 sm:-right-3 sm:top-8 sm:px-4 sm:py-3"
+              className="glass absolute right-0 top-5 z-30 rounded-2xl border border-[#B76E79]/20 px-3 py-2.5 shadow-xl shadow-[#B76E79]/[0.08] sm:-right-3 sm:top-8 sm:px-4 sm:py-3"
             >
               <div className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_9px_rgba(52,211,153,0.8)]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#B76E79] shadow-[0_0_9px_rgba(183,110,121,0.45)]" />
 
-                <span className="font-mono text-[8px] text-cyan-300 sm:text-xs">
+                <span className="font-mono text-[8px] text-[#A35F6A] sm:text-xs">
                   status: shipping
                 </span>
               </div>
@@ -372,9 +378,9 @@ export default function AboutSection() {
                 ease: 'easeInOut',
                 delay: 0.5,
               }}
-              className="glass absolute bottom-6 left-0 z-30 rounded-2xl border border-violet-400/15 px-3 py-2.5 shadow-xl shadow-violet-500/5 sm:-left-3 sm:bottom-8 sm:px-4 sm:py-3"
+              className="glass absolute bottom-6 left-0 z-30 rounded-2xl border border-[#D99AA5]/25 px-3 py-2.5 shadow-xl shadow-[#B76E79]/[0.06] sm:-left-3 sm:bottom-8 sm:px-4 sm:py-3"
             >
-              <p className="font-mono text-[8px] uppercase tracking-wider text-violet-300 sm:text-xs">
+              <p className="font-mono text-[8px] uppercase tracking-wider text-[#A35F6A] sm:text-xs">
                 UET Taxila
               </p>
             </motion.div>
@@ -390,7 +396,7 @@ export default function AboutSection() {
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
-              className="glass absolute bottom-3 right-3 z-30 hidden rounded-xl border border-slate-700/70 px-3 py-2 font-mono text-[9px] text-slate-500 sm:block"
+              className="glass absolute bottom-3 right-3 z-30 hidden rounded-xl border border-[#D8B8BE]/60 px-3 py-2 font-mono text-[9px] text-[#8B7D80] sm:block"
             >
               {'<build />'}
             </motion.div>
@@ -415,14 +421,14 @@ export default function AboutSection() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-4 text-sm leading-7 text-slate-400 sm:text-base sm:leading-8"
+            className="space-y-4 text-sm leading-7 text-[#1F1B1D] sm:text-base sm:leading-8"
           >
             <p>
-              <strong className="font-medium text-slate-100">
+              <strong className="font-medium text-[#2A2527]">
                 Ali Rashid
               </strong>{' '}
               is a BS Computer Science student at the{' '}
-              <strong className="font-medium text-sky-200">
+              <strong className="font-medium text-[#A35F6A]">
                 University of Engineering and Technology (UET) Taxila
               </strong>{' '}
               in Pakistan.
@@ -430,7 +436,7 @@ export default function AboutSection() {
 
             <p>
               His work focuses on{' '}
-              <strong className="font-medium text-slate-200">
+              <strong className="font-medium text-[#40383B]">
                 Artificial Intelligence and Full-Stack Development
               </strong>
               , with an emphasis on turning ideas into practical,
@@ -439,11 +445,11 @@ export default function AboutSection() {
 
             <p>
               He enjoys working across the stack — from{' '}
-              <strong className="font-medium text-slate-200">
+              <strong className="font-medium text-[#40383B]">
                 frontend interfaces
               </strong>{' '}
               and backend APIs to databases, AI integrations, and{' '}
-              <strong className="font-medium text-slate-200">
+              <strong className="font-medium text-[#40383B]">
                 interactive 3D experiences
               </strong>
               .
@@ -465,18 +471,18 @@ export default function AboutSection() {
             className="glass glow-border mt-7 overflow-hidden rounded-2xl"
           >
             <div className="relative p-5 sm:p-6">
-              <div className="absolute right-0 top-0 h-24 w-24 rounded-full bg-sky-400/[0.05] blur-2xl" />
+              <div className="absolute right-0 top-0 h-24 w-24 rounded-full bg-[#D99AA5]/[0.08] blur-2xl" />
 
               <div className="relative">
                 <div className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_10px_rgba(103,232,249,0.8)]" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#B76E79] shadow-[0_0_10px_rgba(183,110,121,0.4)]" />
 
-                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-cyan-300/80 sm:text-[10px]">
+                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-[#A35F6A] sm:text-[10px]">
                     Career Goal / Mission
                   </p>
                 </div>
 
-                <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">
+                <p className="mt-3 text-sm leading-6 text-[#5F5558] sm:text-base sm:leading-7">
                   {profile.careerGoal}
                 </p>
               </div>
@@ -491,16 +497,16 @@ export default function AboutSection() {
           >
             <div className="mb-7 flex items-end justify-between">
               <div>
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-sky-300/70 sm:text-[10px]">
+                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-[#A35F6A]/80 sm:text-[10px]">
                   Development Journey
                 </p>
 
-                <h3 className="mt-2 font-display text-xl font-medium text-slate-100 sm:text-2xl">
+                <h3 className="mt-2 font-display text-xl font-medium text-[#2A2527] sm:text-2xl">
                   What I&apos;m Building Toward
                 </h3>
               </div>
 
-              <span className="hidden font-mono text-[9px] text-slate-600 sm:block">
+              <span className="hidden font-mono text-[9px] text-[#A99B9E] sm:block">
                 01 — 04
               </span>
             </div>
@@ -516,25 +522,25 @@ export default function AboutSection() {
                     whileHover={{
                       y: -4,
                     }}
-                    className="group rounded-2xl border border-slate-800/70 bg-slate-950/25 p-4 transition-all duration-300 hover:border-sky-400/20 hover:bg-slate-900/35"
+                    className="group rounded-2xl border border-[#D8B8BE]/60 bg-white/55 p-4 transition-all duration-300 hover:border-[#B76E79]/30 hover:bg-white/80"
                   >
                     <div className="flex items-start gap-3">
-                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-sky-400/10 bg-sky-400/[0.04] text-sky-300 transition-colors duration-300 group-hover:border-sky-400/25 group-hover:bg-sky-400/[0.08]">
+                      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-[#B76E79]/15 bg-[#B76E79]/[0.05] text-[#A35F6A] transition-colors duration-300 group-hover:border-[#B76E79]/30 group-hover:bg-[#B76E79]/[0.09]">
                         <Icon size={16} />
                       </div>
 
                       <div className="min-w-0">
                         <div className="flex flex-wrap items-center gap-2">
-                          <h4 className="font-display text-sm font-medium text-slate-100 transition-colors duration-300 group-hover:text-sky-300 sm:text-base">
+                          <h4 className="font-display text-sm font-medium text-[#40383B] transition-colors duration-300 group-hover:text-[#A35F6A] sm:text-base">
                             {point.title}
                           </h4>
 
-                          <span className="rounded-full border border-slate-800 bg-slate-950/50 px-2 py-0.5 font-mono text-[7px] uppercase tracking-wider text-slate-600 sm:text-[8px]">
+                          <span className="rounded-full border border-[#D8B8BE]/60 bg-white/60 px-2 py-0.5 font-mono text-[7px] uppercase tracking-wider text-[#9B8E91] sm:text-[8px]">
                             {point.tag}
                           </span>
                         </div>
 
-                        <p className="mt-2 text-xs leading-5 text-slate-500 transition-colors duration-300 group-hover:text-slate-400 sm:text-sm sm:leading-6">
+                        <p className="mt-2 text-xs leading-5 text-[#2F292C] transition-colors duration-300 group-hover:text-[#1F1B1D] sm:text-sm sm:leading-6">
                           {point.detail}
                         </p>
                       </div>
@@ -575,19 +581,19 @@ export default function AboutSection() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-violet-300 shadow-[0_0_10px_rgba(167,139,250,0.7)]" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#B76E79] shadow-[0_0_10px_rgba(183,110,121,0.4)]" />
 
-                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-violet-300/70">
+                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-[#A35F6A]/80">
                     Beyond Development
                   </p>
                 </div>
 
-                <h3 className="mt-2 font-display text-xl font-medium text-slate-100 sm:text-2xl">
+                <h3 className="mt-2 font-display text-xl font-medium text-[#2A2527] sm:text-2xl">
                   Leadership & University Activities
                 </h3>
               </div>
 
-              <span className="font-mono text-[9px] text-slate-600">
+              <span className="font-mono text-[9px] text-[#A99B9E]">
                 EXPERIENCE / COMMUNITY
               </span>
             </div>
@@ -614,17 +620,17 @@ export default function AboutSection() {
                   whileHover={{
                     y: -3,
                   }}
-                  className="group rounded-2xl border border-slate-800/70 bg-slate-950/25 p-4 transition-all duration-300 hover:border-violet-400/20 hover:bg-violet-400/[0.03]"
+                  className="group rounded-2xl border border-[#D8B8BE]/60 bg-white/55 p-4 transition-all duration-300 hover:border-[#B76E79]/25 hover:bg-[#B76E79]/[0.035]"
                 >
                   <div className="flex items-start gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400 transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_10px_rgba(167,139,250,0.7)]" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#B76E79] transition-transform duration-300 group-hover:scale-150 group-hover:shadow-[0_0_10px_rgba(183,110,121,0.45)]" />
 
                     <div>
-                      <p className="font-display text-sm font-medium text-slate-200 transition-colors duration-300 group-hover:text-violet-200 sm:text-base">
+                      <p className="font-display text-sm font-medium text-[#40383B] transition-colors duration-300 group-hover:text-[#A35F6A] sm:text-base">
                         {item.title}
                       </p>
 
-                      <p className="mt-1 text-xs leading-5 text-slate-500 sm:text-sm">
+                      <p className="mt-1 text-xs leading-5 text-[#827679] sm:text-sm">
                         {item.detail}
                       </p>
                     </div>
@@ -637,7 +643,7 @@ export default function AboutSection() {
               <a
                 href="#leadership"
                 data-cursor-hover
-                className="group inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.15em] text-slate-500 transition-colors hover:text-violet-300 sm:text-[10px]"
+                className="group inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.15em] text-[#827679] transition-colors hover:text-[#A35F6A] sm:text-[10px]"
               >
                 View Timeline
                 <ArrowUpRight
@@ -654,7 +660,7 @@ export default function AboutSection() {
 
       <div
         aria-hidden="true"
-        className="mx-auto mt-16 h-px w-24 bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent"
+        className="mx-auto mt-16 h-px w-24 bg-gradient-to-r from-transparent via-[#B76E79]/40 to-transparent"
       />
     </section>
   )

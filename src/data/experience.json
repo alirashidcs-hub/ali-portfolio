@@ -1,0 +1,44 @@
+[
+  {
+    "id": "python-development-arch-technologies",
+    "role": "Python Development Intern",
+    "organization": "Arch Technologies",
+    "type": "Internship",
+    "description": "Contributed to practical Python development through project-based programming, application development, problem solving, and debugging and testing work.",
+    "responsibilities": [
+      "Practical Python programming",
+      "Application development",
+      "Problem solving",
+      "Debugging and testing"
+    ],
+    "tags": ["Python", "Programming", "Application Development", "Testing"]
+  },
+  {
+    "id": "machine-learning-arch-technologies",
+    "role": "Machine Learning Intern",
+    "organization": "Arch Technologies",
+    "type": "Internship",
+    "description": "Worked with practical machine learning and data science workflows, including Python-based data preparation, model training, and evaluation activities.",
+    "responsibilities": [
+      "Python-based ML workflows",
+      "Data preprocessing",
+      "Model training",
+      "Model evaluation"
+    ],
+    "tags": ["Python", "Machine Learning", "Data Science", "Data Preprocessing"]
+  },
+  {
+    "id": "data-analyst-codealpha",
+    "role": "Data Analyst Intern",
+    "organization": "CodeAlpha",
+    "type": "Internship",
+    "description": "Applied practical data analysis methods to real datasets, with an emphasis on exploratory analysis, data preparation, visualization, and actionable statistical insights.",
+    "responsibilities": [
+      "Exploratory Data Analysis",
+      "Data cleaning and preprocessing",
+      "Data visualization",
+      "Statistical and data insights"
+    ],
+    "tags": ["Python", "Pandas", "EDA", "Data Visualization"]
+  }
+]

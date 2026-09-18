@@ -80,7 +80,7 @@ export default function Navbar() {
       }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-slate-800/60 bg-slate-950/70 py-3 shadow-lg shadow-black/10 backdrop-blur-xl'
+          ? 'border-b border-rose-200/70 bg-white/75 py-3 shadow-lg shadow-rose-900/5 backdrop-blur-xl'
           : 'bg-transparent py-5'
       }`}
     >
@@ -95,12 +95,12 @@ export default function Navbar() {
           className="group relative flex items-center gap-2"
           aria-label="Ali Rashid — Home"
         >
-          <span className="font-display text-sm font-semibold tracking-[0.25em] text-slate-100 transition-colors group-hover:text-sky-300">
+          <span className="font-display text-sm font-semibold tracking-[0.25em] text-[#2A2527] transition-colors group-hover:text-[#B76E79]">
             AR
-            <span className="text-sky-400">.</span>
+            <span className="text-[#B76E79]">.</span>
           </span>
 
-          <span className="hidden h-1 w-1 rounded-full bg-cyan-300 shadow-[0_0_8px_rgba(103,232,249,0.8)] sm:block" />
+          <span className="hidden h-1 w-1 rounded-full bg-[#D99AA5] shadow-[0_0_8px_rgba(217,154,165,0.55)] sm:block" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -114,17 +114,17 @@ export default function Navbar() {
                   onClick={(event) =>
                     handleSectionClick(event, link.hash)
                   }
-                  className="group relative block rounded-full px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-slate-400 transition-colors duration-200 hover:text-sky-300"
+                  className="group relative block rounded-full px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-[#6F6467] transition-colors duration-200 hover:text-[#B76E79]"
                 >
                   {link.label}
 
-                  <span className="absolute inset-x-3 bottom-1 h-px origin-center scale-x-0 bg-gradient-to-r from-sky-400 to-violet-400 transition-transform duration-300 group-hover:scale-x-100" />
+                  <span className="absolute inset-x-3 bottom-1 h-px origin-center scale-x-0 bg-gradient-to-r from-[#B76E79] to-[#D99AA5] transition-transform duration-300 group-hover:scale-x-100" />
                 </a>
               </li>
             ))}
           </ul>
 
-          <div className="mx-3 h-5 w-px bg-slate-800" />
+          <div className="mx-3 h-5 w-px bg-rose-200/70" />
 
           <NavLink
             to="/projects"
@@ -132,8 +132,8 @@ export default function Navbar() {
             className={({ isActive }) =>
               `group inline-flex items-center gap-1.5 rounded-full border px-4 py-2 font-mono text-[10px] uppercase tracking-[0.12em] transition-all duration-300 ${
                 isActive
-                  ? 'border-sky-400/30 bg-sky-400/10 text-sky-300'
-                  : 'border-slate-700/70 bg-slate-950/30 text-slate-300 hover:border-sky-400/30 hover:bg-sky-400/5 hover:text-sky-300'
+                  ? 'border-[#B76E79]/30 bg-[#B76E79]/10 text-[#A35F6A]'
+                  : 'border-rose-200/80 bg-white/45 text-[#554B4E] hover:border-[#B76E79]/30 hover:bg-[#B76E79]/5 hover:text-[#B76E79]'
               }`
             }
           >
@@ -150,7 +150,7 @@ export default function Navbar() {
           type="button"
           data-cursor-hover
           onClick={() => setOpen((value) => !value)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-800/80 bg-slate-950/40 text-slate-200 transition-all duration-300 hover:border-sky-400/30 hover:text-sky-300 lg:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-rose-200/80 bg-white/60 text-[#3A3335] transition-all duration-300 hover:border-[#B76E79]/30 hover:text-[#B76E79] lg:hidden"
           aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
           aria-expanded={open}
           aria-controls="mobile-navigation"
@@ -170,7 +170,7 @@ export default function Navbar() {
             transition={{ duration: 0.25, ease: 'easeOut' }}
             className="overflow-hidden lg:hidden"
           >
-            <div className="mx-4 mt-3 rounded-2xl border border-slate-800/70 bg-slate-950/85 p-3 shadow-2xl shadow-black/30 backdrop-blur-2xl sm:mx-6">
+            <div className="mx-4 mt-3 rounded-2xl border border-rose-200/80 bg-white/90 p-3 shadow-2xl shadow-rose-900/10 backdrop-blur-2xl sm:mx-6">
               <div className="grid grid-cols-2 gap-1">
                 {sectionLinks.map((link) => (
                   <a
@@ -179,14 +179,14 @@ export default function Navbar() {
                     onClick={(event) =>
                       handleSectionClick(event, link.hash)
                     }
-                    className="rounded-xl px-3 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-slate-400 transition-colors hover:bg-slate-900 hover:text-sky-300"
+                    className="rounded-xl px-3 py-3 font-mono text-[10px] uppercase tracking-[0.1em] text-[#6F6467] transition-colors hover:bg-[#FBECEF] hover:text-[#B76E79]"
                   >
                     {link.label}
                   </a>
                 ))}
               </div>
 
-              <div className="my-3 h-px bg-slate-800" />
+              <div className="my-3 h-px bg-rose-200/70" />
 
               <div className="grid grid-cols-1 gap-1">
                 {pageLinks.map((link) => (
@@ -197,8 +197,8 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `rounded-xl px-3 py-3 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors ${
                         isActive
-                          ? 'bg-sky-400/10 text-sky-300'
-                          : 'text-violet-300 hover:bg-slate-900 hover:text-sky-300'
+                          ? 'bg-[#B76E79]/10 text-[#A35F6A]'
+                          : 'text-[#80666C] hover:bg-[#FBECEF] hover:text-[#B76E79]'
                       }`
                     }
                   >

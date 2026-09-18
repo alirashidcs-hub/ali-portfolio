@@ -66,7 +66,7 @@ export default function CustomCursor() {
 
       <div
         ref={dotRef}
-        className="pointer-events-none fixed left-0 top-0 h-1.5 w-1.5 -ml-0.75 -mt-0.75 rounded-full bg-cyan-300 will-change-transform"
+        className="pointer-events-none fixed left-0 top-0 h-1.5 w-1.5 -ml-0.75 -mt-0.75 rounded-full bg-[#B76E79] will-change-transform"
       />
 
       {/* Cursor ring */}
@@ -75,8 +75,8 @@ export default function CustomCursor() {
         ref={ringRef}
         className={`pointer-events-none fixed left-0 top-0 -ml-4 -mt-4 rounded-full border will-change-transform transition-[width,height,border-color,opacity] duration-200 ease-out ${
           hovering
-            ? 'h-10 w-10 border-violet-400 opacity-90'
-            : 'h-8 w-8 border-sky-400/60 opacity-60'
+            ? 'h-10 w-10 border-[#B76E79] opacity-90'
+            : 'h-8 w-8 border-[#C97887]/60 opacity-60'
         }`}
       />
     </div>

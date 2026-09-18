@@ -4,6 +4,7 @@ import publicationsData from './publications.json'
 import skillsData from './skills.json'
 import timelineData from './timeline.json'
 import profileData from './profile.json'
+import experienceData from './experience.json'
 import type {
   Project,
   Certificate,
@@ -11,6 +12,7 @@ import type {
   SkillGroup,
   TimelineItem,
   Profile,
+  Experience,
 } from './types'
 
 export const projects = projectsData as Project[]
@@ -19,5 +21,6 @@ export const publications = publicationsData as Publication[]
 export const skillGroups = skillsData as SkillGroup[]
 export const timeline = timelineData as TimelineItem[]
 export const profile = profileData as Profile
+export const experiences = experienceData as Experience[]
 
 export * from './types'

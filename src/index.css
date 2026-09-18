@@ -1,16 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
+/*
+  The original components use Tailwind's cool-gray and blue color names as
+  semantic tokens.  Re-map those tokens here rather than changing component
+  markup and behavior: every existing surface, border and muted label now
+  participates in the warm editorial palette.
+*/
 @theme {
+  --color-slate-50: #1F1B1D;
+  --color-slate-100: #1F1B1D;
+  --color-slate-200: #1F1B1D;
+  --color-slate-300: #252023;
+  --color-slate-400: #252023;
+  --color-slate-500: #40383B;
+  --color-slate-600: #40383B;
+  --color-slate-700: #D9BFC5;
+  --color-slate-800: #E6D5D9;
+  --color-slate-900: #FFF0F3;
+  --color-slate-950: #FFF7F9;
+
+  --color-sky-200: #C97887;
+  --color-sky-300: #B76E79;
+  --color-sky-400: #B76E79;
+  --color-sky-500: #C97887;
+  --color-cyan-300: #D99AA5;
+  --color-cyan-400: #C97887;
+  --color-cyan-500: #B76E79;
+  --color-violet-300: #C97887;
+  --color-violet-400: #B76E79;
+  --color-violet-500: #B76E79;
+  --color-violet-950: #FBECEF;
+}
+
+:root {
   --font-display: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  --color-void: #050816;
-  --color-navy: #0F172A;
-  --color-neon: #38BDF8;
-  --color-violet: #8B5CF6;
-  --color-cyan: #22D3EE;
+  /* ─────────────────────────────────────────────
+     Premium Blush Pink Palette
+  ───────────────────────────────────────────── */
+
+  --color-void: #FFF7F9;
+  --color-navy: #FFF0F3;
+  --color-neon: #C97887;
+  --color-violet: #B76E79;
+  --color-cyan: #D99AA5;
 }
 
 /* ─────────────────────────────────────────────
@@ -26,7 +62,7 @@
 html {
   min-width: 320px;
   background: var(--color-void);
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -35,7 +71,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background: var(--color-void);
-  color: #E2E8F0;
+  color: #1F1B1D;
   font-family: var(--font-body);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -101,8 +137,8 @@ a {
 }
 
 ::selection {
-  background: rgba(139, 92, 246, 0.35);
-  color: #fff;
+  background: rgba(183, 110, 121, 0.22);
+  color: #2A2527;
 }
 
 /* ─────────────────────────────────────────────
@@ -164,8 +200,8 @@ a {
 ───────────────────────────────────────────── */
 
 .glass {
-  background: rgba(15, 23, 42, 0.45);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid #E6D5D9;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -175,15 +211,7 @@ a {
 ───────────────────────────────────────────── */
 
 .text-gradient {
-  background: linear-gradient(
-    90deg,
-    var(--color-neon),
-    var(--color-violet) 55%,
-    var(--color-cyan)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #B76E79;
 }
 
 /* ─────────────────────────────────────────────
@@ -204,11 +232,14 @@ a {
   padding: 1px;
   background: linear-gradient(
     135deg,
-    rgba(56, 189, 248, 0.6),
-    rgba(139, 92, 246, 0.6),
-    rgba(34, 211, 238, 0.6)
+    rgba(183, 110, 121, 0.55),
+    rgba(201, 120, 135, 0.55),
+    rgba(95, 42, 51, 0.55)
   );
   -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -233,7 +264,7 @@ a {
   inset: 0;
   z-index: 60;
   pointer-events: none;
-  opacity: 0.035;
+  opacity: 0.025;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -248,7 +279,7 @@ a {
   }
 
   .grain {
-    opacity: 0.025;
+    opacity: 0.018;
   }
 }
 
@@ -257,11 +288,109 @@ a {
 ───────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+.text-rose-accent {
+  color: #B76E79;
+}
+
+/* Hero technology constellation: intentionally delicate, with no ambient glow. */
+.hero-tag-constellation {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: min(28rem, 92vw);
+  height: 3.5rem;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.52;
+  background:
+    radial-gradient(circle at 12% 68%, #B76E79 0 1px, transparent 1.8px),
+    radial-gradient(circle at 39% 22%, #D99AA5 0 1px, transparent 1.8px),
+    radial-gradient(circle at 72% 76%, #B76E79 0 1px, transparent 1.8px),
+    radial-gradient(circle at 91% 30%, #D99AA5 0 1px, transparent 1.8px),
+    linear-gradient(172deg, transparent 0 25%, rgba(183, 110, 121, 0.16) 25.5% 26%, transparent 26.5% 100%),
+    linear-gradient(9deg, transparent 0 61%, rgba(183, 110, 121, 0.13) 61.5% 62%, transparent 62.5% 100%);
+}
+
+@keyframes hero-tag-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.hero-tech-tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #E3C8CE;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.42rem 0.72rem;
+  color: #252023;
+  font-family: var(--font-mono);
+  font-size: 0.56rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 7px 18px rgba(183, 110, 121, 0.05);
+  animation-name: hero-tag-float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transition: border-color 280ms ease, box-shadow 280ms ease, background-color 280ms ease;
+}
+
+.hero-tech-tag::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(105deg, transparent 32%, rgba(255, 255, 255, 0.9) 48%, transparent 64%);
+  transform: translateX(-135%);
+  transition: transform 560ms ease;
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .hero-tech-tag {
+    padding: 0.48rem 0.84rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-tech-tag:hover {
+    border-color: #B76E79;
+    background: #FFFFFF;
+    box-shadow: 0 12px 25px rgba(159, 82, 98, 0.12);
+  }
+
+  .hero-tech-tag:hover::after {
+    transform: translateX(135%);
+  }
+}
+
+/* Guardrails for pre-existing one-off text utilities in homepage cards.
+   These were previously muted decorative colors but are attached to content
+   visitors need to read, so they deliberately resolve to accessible ink. */
+.text-\[\#756B6E\],
+.text-\[\#827679\],
+.text-\[\#6F6467\],
+.text-\[\#5F5558\] {
+  color: #252023;
+}
+
+.text-\[\#9A8D91\],
+.text-\[\#B5A7AB\],
+.text-\[\#A99B9E\],
+.text-\[\#A89B9F\],
+.text-\[\#B7AAAE\],
+.text-\[\#9B8E91\],
+.text-\[\#8B7D80\],
+.text-\[\#817579\] {
+  color: #40383B;
 }

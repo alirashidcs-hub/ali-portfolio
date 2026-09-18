@@ -29,21 +29,21 @@ export default function FeaturedProjectsSection() {
         aria-hidden="true"
         animate={{
           scale: [1, 1.08, 1],
-          opacity: [0.08, 0.16, 0.08],
+          opacity: [0.07, 0.13, 0.07],
         }}
         transition={{
           duration: 9,
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        className="pointer-events-none absolute -left-32 top-20 -z-10 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl sm:h-96 sm:w-96"
+        className="pointer-events-none absolute -left-32 top-20 -z-10 h-72 w-72 rounded-full bg-[#D99AA5]/20 blur-3xl sm:h-96 sm:w-96"
       />
 
       <motion.div
         aria-hidden="true"
         animate={{
           scale: [1, 1.1, 1],
-          opacity: [0.07, 0.14, 0.07],
+          opacity: [0.05, 0.11, 0.05],
         }}
         transition={{
           duration: 11,
@@ -51,7 +51,7 @@ export default function FeaturedProjectsSection() {
           ease: 'easeInOut',
           delay: 1,
         }}
-        className="pointer-events-none absolute -right-32 bottom-20 -z-10 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl sm:h-96 sm:w-96"
+        className="pointer-events-none absolute -right-32 bottom-20 -z-10 h-72 w-72 rounded-full bg-[#C97887]/15 blur-3xl sm:h-96 sm:w-96"
       />
 
       {/* =========================================================
@@ -60,10 +60,10 @@ export default function FeaturedProjectsSection() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-20 opacity-[0.015]"
+        className="pointer-events-none absolute inset-0 -z-20 opacity-[0.035]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(148,163,184,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.5) 1px, transparent 1px)',
+            'linear-gradient(rgba(183,110,121,0.45) 1px, transparent 1px), linear-gradient(90deg, rgba(183,110,121,0.45) 1px, transparent 1px)',
           backgroundSize:
             'clamp(32px, 4vw, 48px) clamp(32px, 4vw, 48px)',
         }}
@@ -82,7 +82,7 @@ export default function FeaturedProjectsSection() {
           <Link
             data-cursor-hover
             to="/projects"
-            className="group hidden items-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/20 px-5 py-2.5 text-sm text-slate-300 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/40 hover:bg-cyan-400/5 hover:text-white sm:flex"
+            className="group hidden items-center gap-2 rounded-full border border-[#E5D1D6] bg-white/60 px-5 py-2.5 text-sm text-[#5F5558] shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#C97887]/40 hover:bg-white/85 hover:text-[#A35F6A] sm:flex"
           >
             View All Projects
 
@@ -117,13 +117,13 @@ export default function FeaturedProjectsSection() {
         }}
         className="mt-8 flex items-center justify-center sm:justify-start"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-slate-800/80 bg-slate-950/30 px-3 py-1.5 backdrop-blur-sm">
+        <div className="inline-flex items-center gap-2 rounded-full border border-[#E5D1D6] bg-white/60 px-3 py-1.5 shadow-sm backdrop-blur-sm">
           <Sparkles
             size={11}
-            className="text-cyan-300"
+            className="text-[#B76E79]"
           />
 
-          <span className="font-mono text-[9px] uppercase tracking-[0.16em] text-slate-500">
+          <span className="font-mono text-[9px] uppercase tracking-[0.16em] text-[#8F8286]">
             {featured.length} Featured{' '}
             {featured.length === 1 ? 'Project' : 'Projects'}
           </span>
@@ -186,13 +186,13 @@ export default function FeaturedProjectsSection() {
 
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -inset-2 -z-10 rounded-[2rem] bg-gradient-to-br from-sky-400/0 via-violet-500/0 to-cyan-400/0 opacity-0 blur-2xl transition-all duration-500 group-hover:from-sky-400/10 group-hover:via-violet-500/10 group-hover:to-cyan-400/10 group-hover:opacity-100"
+              className="pointer-events-none absolute -inset-2 -z-10 rounded-[2rem] bg-gradient-to-br from-[#B76E79]/0 via-[#C97887]/0 to-[#D99AA5]/0 opacity-0 blur-2xl transition-all duration-500 group-hover:from-[#B76E79]/10 group-hover:via-[#C97887]/10 group-hover:to-[#D99AA5]/10 group-hover:opacity-100"
             />
 
             {/* Project number */}
 
-            <div className="pointer-events-none absolute right-4 top-4 z-20 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-              <span className="rounded-full border border-white/10 bg-slate-950/70 px-2 py-1 font-mono text-[8px] tracking-widest text-slate-500 backdrop-blur-md">
+            <div className="pointer-events-none absolute right-4 top-4 z-20 translate-y-1 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+              <span className="rounded-full border border-white/70 bg-white/80 px-2 py-1 font-mono text-[8px] tracking-widest text-[#8F8286] shadow-sm backdrop-blur-md">
                 {String(index + 1).padStart(2, '0')}
               </span>
             </div>
@@ -231,7 +231,7 @@ export default function FeaturedProjectsSection() {
         <Link
           data-cursor-hover
           to="/projects"
-          className="group flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/30 px-6 py-3 text-sm text-slate-300 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-400/40 hover:bg-cyan-400/5 hover:text-white"
+          className="group flex items-center gap-2 rounded-full border border-[#E5D1D6] bg-white/65 px-6 py-3 text-sm text-[#5F5558] shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#C97887]/40 hover:bg-white/90 hover:text-[#A35F6A]"
         >
           View All Projects
 

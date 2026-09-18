@@ -35,17 +35,21 @@ function SkillBar({
       }}
       className="group"
     >
+      {/* Skill name + percentage */}
+
       <div className="mb-2 flex items-center justify-between gap-3">
-        <span className="min-w-0 truncate text-sm font-medium text-slate-300 transition-colors duration-300 group-hover:text-white">
+        <span className="min-w-0 truncate text-sm font-medium text-[#40383B] transition-colors duration-300 group-hover:text-[#B76E79]">
           {name}
         </span>
 
-        <span className="shrink-0 font-mono text-[10px] text-slate-500 transition-colors duration-300 group-hover:text-cyan-300 sm:text-xs">
+        <span className="shrink-0 font-mono text-[10px] text-[#40383B] transition-colors duration-300 group-hover:text-[#B76E79] sm:text-xs">
           {level}%
         </span>
       </div>
 
-      <div className="relative h-1.5 overflow-hidden rounded-full bg-slate-900/90">
+      {/* Progress bar */}
+
+      <div className="relative h-1.5 overflow-hidden rounded-full bg-[#F0E4E7]">
         <motion.div
           initial={{ width: 0 }}
           animate={
@@ -58,14 +62,16 @@ function SkillBar({
             delay: delay + 0.1,
             ease: 'easeOut',
           }}
-          className="relative h-full rounded-full bg-gradient-to-r from-sky-400 via-violet-500 to-cyan-300"
+          className="relative h-full rounded-full bg-gradient-to-r from-[#B76E79] via-[#C97887] to-[#D99AA5]"
         >
+          {/* Moving highlight */}
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={
               inView
                 ? {
-                    opacity: [0, 0.8, 0],
+                    opacity: [0, 0.7, 0],
                     x: ['-100%', '180%'],
                   }
                 : { opacity: 0 }
@@ -75,7 +81,7 @@ function SkillBar({
               delay: delay + 0.45,
               ease: 'easeInOut',
             }}
-            className="absolute inset-y-0 left-0 w-10 bg-white/50 blur-sm"
+            className="absolute inset-y-0 left-0 w-10 bg-white/60 blur-sm"
           />
         </motion.div>
       </div>
@@ -93,36 +99,36 @@ export default function SkillsSection() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-20 opacity-[0.018]"
+        className="pointer-events-none absolute inset-0 -z-20 opacity-[0.035]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(148,163,184,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.5) 1px, transparent 1px)',
+            'linear-gradient(rgba(183,110,121,0.45) 1px, transparent 1px), linear-gradient(90deg, rgba(183,110,121,0.45) 1px, transparent 1px)',
           backgroundSize:
             'clamp(32px, 4vw, 48px) clamp(32px, 4vw, 48px)',
         }}
       />
 
-      {/* Ambient glow */}
+      {/* Ambient blush glow */}
 
       <motion.div
         aria-hidden="true"
         animate={{
           scale: [1, 1.08, 1],
-          opacity: [0.08, 0.16, 0.08],
+          opacity: [0.07, 0.13, 0.07],
         }}
         transition={{
           duration: 9,
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        className="pointer-events-none absolute left-[-8%] top-24 -z-10 h-64 w-64 rounded-full bg-violet-500/[0.07] blur-3xl sm:h-80 sm:w-80"
+        className="pointer-events-none absolute left-[-8%] top-24 -z-10 h-64 w-64 rounded-full bg-[#D99AA5]/20 blur-3xl sm:h-80 sm:w-80"
       />
 
       <motion.div
         aria-hidden="true"
         animate={{
           scale: [1, 1.1, 1],
-          opacity: [0.07, 0.14, 0.07],
+          opacity: [0.05, 0.11, 0.05],
         }}
         transition={{
           duration: 11,
@@ -130,7 +136,7 @@ export default function SkillsSection() {
           ease: 'easeInOut',
           delay: 1,
         }}
-        className="pointer-events-none absolute bottom-16 right-[-8%] -z-10 h-72 w-72 rounded-full bg-cyan-500/[0.06] blur-3xl sm:h-96 sm:w-96"
+        className="pointer-events-none absolute bottom-16 right-[-8%] -z-10 h-72 w-72 rounded-full bg-[#C97887]/15 blur-3xl sm:h-96 sm:w-96"
       />
 
       {/* Heading */}
@@ -184,31 +190,33 @@ export default function SkillsSection() {
               stiffness: 180,
               damping: 20,
             }}
-            className="group relative overflow-hidden rounded-3xl border border-slate-800/70 bg-slate-950/45 p-5 backdrop-blur-xl transition-colors duration-300 hover:border-sky-400/20 hover:bg-slate-900/50 sm:p-7"
+            className="group relative overflow-hidden rounded-3xl border border-[#E8D6DA] bg-white/65 p-5 shadow-[0_18px_60px_rgba(183,110,121,0.07)] backdrop-blur-xl transition-all duration-300 hover:border-[#C97887]/40 hover:bg-white/80 hover:shadow-[0_20px_70px_rgba(183,110,121,0.11)] sm:p-7"
           >
             {/* Card accent */}
 
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute right-0 top-0 h-32 w-32 rounded-full bg-sky-400/[0.035] blur-3xl transition-opacity duration-500 group-hover:opacity-100"
+              className="pointer-events-none absolute right-0 top-0 h-32 w-32 rounded-full bg-[#D99AA5]/10 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
             />
 
             {/* Header */}
 
             <div className="relative flex items-center justify-between gap-4">
               <div className="flex min-w-0 items-center gap-3">
-                <span className="relative flex h-2 w-2 shrink-0">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400/30" />
+                {/* Status indicator */}
 
-                  <span className="relative h-2 w-2 rounded-full bg-gradient-to-r from-sky-400 to-violet-500 shadow-[0_0_12px_2px_rgba(56,189,248,0.35)]" />
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#D99AA5]/30" />
+
+                  <span className="relative h-2 w-2 rounded-full bg-gradient-to-r from-[#B76E79] to-[#D99AA5] shadow-[0_0_12px_2px_rgba(183,110,121,0.25)]" />
                 </span>
 
-                <h3 className="truncate font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-cyan-300 sm:text-xs sm:tracking-widest">
+                <h3 className="truncate font-mono text-[10px] font-medium uppercase tracking-[0.18em] text-[#A35F6A] sm:text-xs sm:tracking-widest">
                   {group.category}
                 </h3>
               </div>
 
-              <span className="shrink-0 font-mono text-[8px] uppercase tracking-wider text-slate-600 sm:text-[9px]">
+              <span className="shrink-0 font-mono text-[8px] uppercase tracking-wider text-[#40383B] sm:text-[9px]">
                 {String(groupIndex + 1).padStart(2, '0')} /{' '}
                 {String(skillGroups.length).padStart(2, '0')}
               </span>
@@ -216,7 +224,7 @@ export default function SkillsSection() {
 
             {/* Divider */}
 
-            <div className="relative mt-5 h-px bg-gradient-to-r from-slate-700/70 via-slate-800/30 to-transparent" />
+            <div className="relative mt-5 h-px bg-gradient-to-r from-[#DCC5CA] via-[#EDE2E4] to-transparent" />
 
             {/* Skills */}
 
@@ -237,9 +245,9 @@ export default function SkillsSection() {
             {/* Footer */}
 
             <div className="relative mt-7 flex items-center gap-3">
-              <div className="h-px flex-1 bg-gradient-to-r from-sky-400/20 to-transparent" />
+              <div className="h-px flex-1 bg-gradient-to-r from-[#C97887]/25 to-transparent" />
 
-              <span className="font-mono text-[8px] uppercase tracking-[0.16em] text-slate-700">
+              <span className="font-mono text-[8px] uppercase tracking-[0.16em] text-[#40383B]">
                 {group.items.length}{' '}
                 {group.items.length === 1
                   ? 'skill'
@@ -270,7 +278,7 @@ export default function SkillsSection() {
         }}
         className="mx-auto mt-10 max-w-3xl text-center sm:mt-12"
       >
-        <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-slate-600 sm:text-[10px]">
+        <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-[#40383B] sm:text-[10px]">
           AI · FULL-STACK · 3D · SOFTWARE ENGINEERING
         </p>
       </motion.div>

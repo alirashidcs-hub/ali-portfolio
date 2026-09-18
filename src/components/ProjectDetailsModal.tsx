@@ -82,7 +82,7 @@ export default function ProjectDetailsModal({
               damping: 22,
             }}
             onClick={(event) => event.stopPropagation()}
-            className="relative flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-3xl border border-slate-700/60 bg-[#080d18]/95 shadow-2xl shadow-black/60"
+            className="relative flex max-h-[92vh] w-full max-w-4xl flex-col overflow-hidden rounded-3xl border border-[#E6D5D9] bg-[#FFF7F9]/95 shadow-2xl shadow-[#B76E79]/15"
           >
             {/* Ambient glow */}
             <div className="pointer-events-none absolute -left-32 -top-32 h-64 w-64 rounded-full bg-sky-500/10 blur-3xl" />
@@ -119,7 +119,7 @@ export default function ProjectDetailsModal({
                 )}
 
                 {/* Image overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#080d18] via-transparent to-black/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1F1B1D]/60 via-transparent to-black/10" />
 
                 {/* Project number / label */}
                 <div className="absolute bottom-5 left-6 flex items-center gap-2">

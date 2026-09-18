@@ -45,6 +45,16 @@ export type Publication = {
 export type SkillItem = { name: string; level: number }
 export type SkillGroup = { category: string; items: SkillItem[] }
 
+export type Experience = {
+  id: string
+  role: string
+  organization: string
+  type: 'Internship'
+  description: string
+  responsibilities: string[]
+  tags: string[]
+}
+
 export type TimelineType = 'education' | 'leadership' | 'achievement' | 'certificate'
 export type TimelineItem = {
   id: string

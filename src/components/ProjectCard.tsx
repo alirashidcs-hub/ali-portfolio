@@ -65,23 +65,31 @@ export default function ProjectCard({
         stiffness: 180,
         damping: 16,
       }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-950/50 shadow-xl shadow-black/10 backdrop-blur-xl"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#E6D5D9] bg-white/75 shadow-[0_18px_55px_rgba(183,110,121,0.08)] backdrop-blur-xl transition-shadow duration-300 hover:border-[#C97887]/45 hover:shadow-[0_22px_65px_rgba(183,110,121,0.14)]"
     >
-      {/* Glow */}
+      {/* =========================================================
+          CARD GLOW
+          ========================================================= */}
+
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-r from-sky-400/0 via-violet-500/0 to-cyan-400/0 opacity-0 blur-xl transition-all duration-500 group-hover:from-sky-400/10 group-hover:via-violet-500/10 group-hover:to-cyan-400/10 group-hover:opacity-100"
+        className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-r from-[#B76E79]/0 via-[#C97887]/0 to-[#D99AA5]/0 opacity-0 blur-xl transition-all duration-500 group-hover:from-[#B76E79]/10 group-hover:via-[#C97887]/10 group-hover:to-[#D99AA5]/10 group-hover:opacity-100"
       />
 
-      {/* Project Image */}
-      <div className="relative h-44 overflow-hidden bg-gradient-to-br from-sky-500/10 via-violet-500/10 to-cyan-500/10">
+      {/* =========================================================
+          PROJECT IMAGE
+          ========================================================= */}
+
+      <div className="relative h-44 overflow-hidden bg-gradient-to-br from-[#FBECEF] via-[#F7E4E8] to-[#F2D8DD]">
         {project.images && project.images.length > 0 ? (
           <motion.img
             src={project.images[0]}
             alt={`${project.title} project preview`}
             loading="lazy"
             className="h-full w-full object-cover"
-            whileHover={{ scale: 1.06 }}
+            whileHover={{
+              scale: 1.06,
+            }}
             transition={{
               duration: 0.6,
               ease: 'easeOut',
@@ -102,12 +110,15 @@ export default function ProjectCard({
           </motion.div>
         )}
 
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80" />
+        {/* Image overlay */}
+
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2A2527]/65 via-[#2A2527]/5 to-transparent opacity-80" />
 
         {/* Shine */}
+
         <motion.div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent"
+          className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent"
           whileHover={{
             translateX: '100%',
           }}
@@ -117,95 +128,124 @@ export default function ProjectCard({
           }}
         />
 
-        {/* Status */}
+        {/* =====================================================
+            STATUS
+            ===================================================== */}
+
         <span
           className={`absolute left-4 top-4 rounded-full border px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest backdrop-blur-md ${
             project.status === 'Completed'
-              ? 'border-emerald-400/20 bg-emerald-400/10 text-emerald-300'
+              ? 'border-[#8A9A82]/30 bg-[#F3F7F1]/85 text-[#64745D]'
               : project.status === 'In Progress'
-                ? 'border-amber-400/20 bg-amber-400/10 text-amber-300'
-                : 'border-slate-500/20 bg-slate-500/10 text-slate-400'
+                ? 'border-[#C59B62]/30 bg-[#FBF6EC]/90 text-[#927344]'
+                : 'border-white/40 bg-white/70 text-[#756B6E]'
           }`}
         >
           {project.status}
         </span>
 
-        {/* Featured */}
+        {/* =====================================================
+            FEATURED
+            ===================================================== */}
+
         {project.featured && (
-          <span className="absolute right-4 top-4 rounded-full border border-sky-400/30 bg-sky-400/10 px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest text-sky-300 backdrop-blur-md">
+          <span className="absolute right-4 top-4 rounded-full border border-white/60 bg-[#FFF7F9]/80 px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest text-[#A35F6A] shadow-sm backdrop-blur-md">
             Featured
           </span>
         )}
 
-        {/* View Details */}
+        {/* =====================================================
+            VIEW DETAILS
+            ===================================================== */}
+
         <motion.button
           type="button"
           data-cursor-hover
           onClick={() => onOpen(project)}
-          className="absolute bottom-4 right-4 flex items-center gap-1.5 rounded-full border border-white/10 bg-slate-950/60 px-3 py-1.5 text-[10px] font-medium text-slate-200 opacity-0 backdrop-blur-md transition-opacity duration-300 group-hover:opacity-100"
+          className="absolute bottom-4 right-4 flex items-center gap-1.5 rounded-full border border-white/50 bg-[#2A2527]/75 px-3 py-1.5 text-[10px] font-medium text-white opacity-0 shadow-lg backdrop-blur-md transition-all duration-300 hover:bg-[#2A2527]/90 group-hover:opacity-100"
         >
           View Details
           <ArrowUpRight size={12} />
         </motion.button>
       </div>
 
-      {/* Content */}
+      {/* =========================================================
+          CONTENT
+          ========================================================= */}
+
       <div className="relative z-10 flex flex-1 flex-col p-6">
+
         {/* Category + Date */}
+
         <div className="flex items-center justify-between gap-3">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-violet-300/80">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-[#B76E79]">
             {project.category}
           </span>
 
-          <span className="font-mono text-[9px] text-slate-600">
+          <span className="font-mono text-[9px] text-[#40383B]">
             {project.date}
           </span>
         </div>
 
         {/* Title */}
+
         <motion.h3
-          className="mt-2 font-display text-lg text-slate-100"
-          whileHover={{ x: 2 }}
+          className="mt-2 font-display text-lg text-[#171416] transition-colors duration-300 group-hover:text-[#A35F6A]"
+          whileHover={{
+            x: 2,
+          }}
         >
           {project.title}
         </motion.h3>
 
         {/* Description */}
-        <p className="mt-2 flex-1 text-sm leading-6 text-slate-400">
+
+        <p className="mt-2 flex-1 text-sm leading-6 text-[#252023]">
           {project.description}
         </p>
 
-        {/* Tags */}
+        {/* =====================================================
+            TAGS
+            ===================================================== */}
+
         <div className="mt-5 flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-slate-700/70 bg-slate-900/40 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide text-slate-400 transition-colors hover:border-sky-400/30 hover:text-sky-300"
+              className="rounded-full border border-[#E7D8DB] bg-[#FFF7F9]/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wide text-[#40383B] transition-all duration-300 hover:border-[#C97887]/40 hover:bg-[#FBECEF] hover:text-[#A35F6A]"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        {/* Actions */}
-        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-slate-800/80 pt-4">
+        {/* =====================================================
+            ACTIONS
+            ===================================================== */}
+
+        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-[#E9DCDF] pt-4">
+
+          {/* Live Demo */}
+
           {project.liveUrl ? (
             <a
               data-cursor-hover
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 text-xs text-slate-400 transition-colors hover:text-sky-300"
+              className="flex items-center gap-1.5 text-xs text-[#40383B] transition-colors hover:text-[#A35F6A]"
             >
               <ExternalLink size={13} />
               Live Demo
             </a>
           ) : (
-            <span className="flex items-center gap-1.5 text-xs text-slate-700">
+            <span className="flex items-center gap-1.5 text-xs text-[#B7AAAE]">
               <ExternalLink size={13} />
               Live Demo
             </span>
           )}
+
+          {/* GitHub */}
 
           {project.githubUrl ? (
             <a
@@ -213,17 +253,19 @@ export default function ProjectCard({
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 text-xs text-slate-400 transition-colors hover:text-sky-300"
+              className="flex items-center gap-1.5 text-xs text-[#40383B] transition-colors hover:text-[#A35F6A]"
             >
               <Github size={13} />
               GitHub
             </a>
           ) : (
-            <span className="flex items-center gap-1.5 text-xs text-slate-700">
+            <span className="flex items-center gap-1.5 text-xs text-[#B7AAAE]">
               <Github size={13} />
               GitHub
             </span>
           )}
+
+          {/* Demo Video */}
 
           {project.demoVideoUrl && (
             <a
@@ -231,18 +273,20 @@ export default function ProjectCard({
               href={project.demoVideoUrl}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 text-xs text-slate-400 transition-colors hover:text-violet-300"
+              className="flex items-center gap-1.5 text-xs text-[#40383B] transition-colors hover:text-[#B76E79]"
             >
               <PlayCircle size={13} />
               Demo Video
             </a>
           )}
 
+          {/* Case Study */}
+
           <button
             type="button"
             data-cursor-hover
             onClick={() => onOpen(project)}
-            className="ml-auto flex items-center gap-1.5 text-xs text-violet-300 transition-all hover:gap-2 hover:text-violet-200"
+            className="ml-auto flex items-center gap-1.5 text-xs text-[#B76E79] transition-all hover:gap-2 hover:text-[#963F4E]"
           >
             <FileText size={13} />
             Case Study

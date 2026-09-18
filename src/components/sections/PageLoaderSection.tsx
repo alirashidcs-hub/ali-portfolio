@@ -46,7 +46,7 @@ export default function PageLoaderSection() {
             duration: 0.7,
             ease: [0.76, 0, 0.24, 1],
           }}
-          className="fixed inset-0 z-[99999] flex items-center justify-center overflow-hidden bg-[#020617]"
+          className="fixed inset-0 z-[99999] flex items-center justify-center overflow-hidden bg-[#FFF7F9]"
         >
           {/* Background grid */}
           <div
@@ -147,7 +147,7 @@ export default function PageLoaderSection() {
                 duration: 0.65,
                 ease: 'easeOut',
               }}
-              className="font-display text-4xl font-semibold tracking-tight text-white md:text-5xl"
+              className="font-display text-4xl font-semibold tracking-tight text-[#1F1B1D] md:text-5xl"
             >
               Ali Rashid
             </motion.h1>

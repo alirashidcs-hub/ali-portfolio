@@ -189,7 +189,7 @@ function Nodes({ count }: { count: number }) {
         </bufferGeometry>
 
         <pointsMaterial
-          color="#38BDF8"
+          color="#B76E79"
           size={0.055}
           sizeAttenuation
           transparent
@@ -206,7 +206,7 @@ function Nodes({ count }: { count: number }) {
         </bufferGeometry>
 
         <lineBasicMaterial
-          color="#8B5CF6"
+          color="#C97887"
           transparent
           opacity={0.15}
         />
@@ -240,7 +240,7 @@ export default function Background3D() {
         <Nodes count={count} />
       </Canvas>
 
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(15,23,42,0.2),_#050816_75%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,240,243,0.45),_#FFF7F9_75%)]" />
     </div>
   )
 }
